@@ -23,10 +23,10 @@ const Header = () => {
   return (
     <div>
       <Link to="/">Home</Link> <Sep />
-      <Link to="/grocery/:id">view grocery</Link> <Sep />
-      <Link to="/design/grocery/:id">designed grocery page</Link> <Sep />
+      <Link to="/grocery/3">view grocery</Link> <Sep />
+      <Link to="/design/grocery/3">designed grocery page</Link> <Sep />
       <Link to="/groceries">all groceries</Link>
-      <Link to="/manage/grocery/:id">manage grocery</Link> <Sep />
+      <Link to="/manage/grocery/3">manage grocery</Link> <Sep />
       <hr/>
     </div>
   )
@@ -94,18 +94,20 @@ class Router extends Component {
 
 
       <BrowserRouter>
-        <Header />
+
         <Switch>
+
+          <Header />
 
           <Route path="/" exact component={HomeView} />
 
-          <Route path="/grocery/:id"  component={GroceryView} />
+          <Route path="/grocery/3"  component={GroceryView} />
 
-          <Route path="/design/grocery/:id"  component={DesignedGroceryView} />
+          <Route path="/design/grocery/3"  component={DesignedGroceryView} />
 
           <Route path="/groceries"  component={GroceriesView} />
 
-          <Route path="/manage/grocery/:id"  component={ManageGroceryView} />
+          <Route path="/manage/grocery/3"  component={ManageGroceryView} />
 
 
 
@@ -124,7 +126,7 @@ class Router extends Component {
             <Route path="/grocery/:id/:departmentId/purchased"  component={GroceryView} />
             <Route path="/grocery/:id/:departmentId/the-third-key"  component={GroceryView} />
 
-              
+
 
              */}
 
