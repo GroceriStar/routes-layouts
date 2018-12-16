@@ -88,12 +88,13 @@ class Router extends Component {
     return (
       <Fragment>
 
-      <Header />
+
 
 
 
 
       <BrowserRouter>
+        <Header />
         <Switch>
 
           <Route path="/" exact component={HomeView} />
@@ -105,6 +106,32 @@ class Router extends Component {
           <Route path="/groceries"  component={GroceriesView} />
 
           <Route path="/manage/grocery/:id"  component={ManageGroceryView} />
+
+
+
+
+          {/*
+
+            <Route path="/grocery/:id/:departmentId"  component={GroceryView} />
+            <Route path="/grocery/:id/full"  component={GroceryView} />
+
+            <Route path="/grocery/:id/print"  component={GroceryView} />
+            <Route path="/grocery/:id/clone"  component={GroceryView} />
+
+
+            <Route path="/grocery/:id/:departmentId/:status"  component={GroceryView} />
+            <Route path="/grocery/:id/:departmentId/all"  component={GroceryView} />
+            <Route path="/grocery/:id/:departmentId/purchased"  component={GroceryView} />
+            <Route path="/grocery/:id/:departmentId/the-third-key"  component={GroceryView} />
+
+              
+
+             */}
+
+          {/*
+
+             */}
+
 
         </Switch>
       </BrowserRouter>
