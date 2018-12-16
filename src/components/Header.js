@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Fragment } from 'react';
 import { Link } from "react-router-dom";
 
 const Sep = () => <span> | </span>;
@@ -7,9 +7,10 @@ export const Header = () => {
   return (
     <div>
       <Link to="/">Home</Link> <Sep />
-      <Link to="/catalog">Catalog</Link> <Sep />
-      <Link to="/another">Another</Link> <Sep />
-      <Link to="/nested">Nested</Link>
+      <Link to="/grocery/:id">Catalog</Link> <Sep />
+      <Link to="/design/grocery/:id">Another</Link> <Sep />
+      <Link to="/groceries">Nested</Link>
+      <Link to="/manage/grocery/:id">Nested</Link>
       <hr/>
     </div>
   )
