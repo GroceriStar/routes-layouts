@@ -8,30 +8,49 @@ const HomeView = ({ match }) => (
   </div>
 )
 
-const GroceriesView = ({ match }) => (
+const DepartmentByGroceryList  = ({ match }) => (
   <div>
-    GroceriesView
+    DepartmentByGroceryList
   </div>
 )
 
-const GroceryView = ({ match }) => (
+const DataByDepartment  = ({ match }) => (
   <div>
-    GroceryView
+    DataByDepartment - we got an id
   </div>
 )
 
-const ManageGroceryView = ({ match }) => (
+const HideDepartment  = ({ match }) => (
   <div>
-    ManageGroceryView
+    HideDepartment - we got an id
   </div>
 )
 
-const DesignedGroceryView = ({ match }) => (
+const RemoveDepartment  = ({ match }) => (
   <div>
-  DesignedGroceryView
+  RemoveDepartment - we got an id
   </div>
 )
 
+
+const ShowAllDepartment  = ({ match }) => (
+  <div>
+  ShowAllDepartment - we got an id
+  </div>
+)
+
+
+const ToggleStatus   = ({ match }) => (
+  <div>
+ToggleStatus - we got an id </div>
+)
+
+
+const UnhideDepartment  = ({ match }) => (
+  <div>
+  UnhideDepartment - we got an id
+  </div>
+)
 
 class Router extends Component {
   render() {

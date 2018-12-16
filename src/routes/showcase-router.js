@@ -3,6 +3,8 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 // import Header from '../components/Header';
 
+import routes from './config/showcase';
+
 const Sep = () => <span> | </span>;
 
 const Header = () => {
@@ -19,33 +21,66 @@ const Header = () => {
 }
 
 
-const HomeView = ({ match }) => (
+const HomeView = ({ routes }) => (
   <div>
   HomeView
+
+  <RouterConfigExample {...routes} />
+
   </div>
 )
 
+
+const RouterConfigExample = (routes) => {
+
+  return (
+    <Fragment>
+    {routes &&
+      routes.map((route, i) => (
+          <RouteWithSubRoutes key={i} {...route} />
+        ))
+    }
+    </Fragment>
+  );
+}
+
+function RouteWithSubRoutes(route) {
+  return (
+    <Route
+      path={route.path}
+      render={props => (
+        // pass the sub-routes down to keep nesting
+        <route.component {...props} routes={route.routes} />
+      )}
+    />
+  );
+}
+// const { match } = this.props
+//
+// console.log(match.path)
+// console.log(match.url)
+
 const GroceriesView = ({ match }) => (
   <div>
-    GroceriesView
+    GroceriesView - ${match.url}
   </div>
 )
 
 const GroceryView = ({ match }) => (
   <div>
-    GroceryView
+    GroceryView - ${match.url}
   </div>
 )
 
 const ManageGroceryView = ({ match }) => (
   <div>
-    ManageGroceryView
+    ManageGroceryView - ${match.url}
   </div>
 )
 
 const DesignedGroceryView = ({ match }) => (
   <div>
-  DesignedGroceryView
+  DesignedGroceryView - ${match.url}
   </div>
 )
 
