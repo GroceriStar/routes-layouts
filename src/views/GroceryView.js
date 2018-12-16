@@ -7,10 +7,53 @@
   //   const { id } = this.props.match.params;
   //
 
+
+
+  const HomeView = ({ routes }) => (
+    <div>
+    HomeView
+
+    {/*}<RouterConfigExample {...routes} />*/}
+
+    </div>
+  )
+
+
+  const RouterConfigExample = (routes) => {
+
+    return (
+      <Fragment>
+      {routes &&
+        routes.map((route, i) => (
+            <RouteWithSubRoutes key={i} {...route} />
+          ))
+      }
+      </Fragment>
+    );
+  }
+
+  function RouteWithSubRoutes(route) {
+    return (
+      <Route
+        path={route.path}
+        render={props => (
+          // pass the sub-routes down to keep nesting
+          <route.component {...props} routes={route.routes} />
+        )}
+      />
+    );
+  }
+
+
+
+
+
+
+
 const ChangeGroceryNameView = ({ match }) => {
   return (
     <div>
-    ChangeGroceryNameView - we got an id
+    ChangeGroceryNameView - we got an id {match.url}
       <hr/>
     </div>
   )
@@ -19,7 +62,7 @@ const ChangeGroceryNameView = ({ match }) => {
 const CloneGroceryView  = ({ match }) => {
   return (
     <div>
-    CloneGroceryView  we got an id
+    CloneGroceryView  we got an id {match.url}
       <hr/>
     </div>
   )
@@ -44,18 +87,29 @@ const GroceriesView = ({ match }) => (
 
 const GroceryView = ({ match }) => (
   <div>
-    GroceryView
+    GroceryView {match.url}
   </div>
 )
 
 const ManageGroceryView = ({ match }) => (
   <div>
-    ManageGroceryView
+    ManageGroceryView {match.url}
   </div>
 )
 
 const DesignedGroceryView = ({ match }) => (
   <div>
-  DesignedGroceryView
+  DesignedGroceryView {match.url}
   </div>
 )
+
+export {
+  HomeView,
+  ChangeGroceryNameView,
+  CloneGroceryView,
+  CreateGroceryView,
+  GroceriesView,
+  GroceryView,
+  ManageGroceryView,
+  DesignedGroceryView
+}

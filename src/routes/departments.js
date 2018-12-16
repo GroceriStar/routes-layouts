@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
+// https://github.com/GroceriStar/groceristar/blob/master/server/controllers/department-controller.js
 
 const HomeView = ({ match }) => (
   <div>
