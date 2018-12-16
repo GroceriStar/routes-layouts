@@ -15,3 +15,12 @@ https://manavsehgal.com/create-basic-navigation-components-using-react-router-47
 https://stackoverflow.com/questions/45906061/header-footer-navigation-react-router-dom-and-antd-menu-and-router-problems
 https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
 https://reacttraining.com/react-router/core/guides/testing
+
+
+nested routes
+https://stackblitz.com/edit/react-router-dom-4-nested-example?file=index.js
+https://stackoverflow.com/questions/41474134/nested-routes-with-react-router-v4
+
+https://tylermcginnis.com/react-router-nested-routes/
+
+https://medium.com/@marxlow/simple-nested-routes-with-layouts-in-react-router-v4-59b8b63a1184
