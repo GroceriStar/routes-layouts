@@ -1,0 +1,2 @@
+import { matchRoutes, renderRoutes } from "react-router-config";
+https://github.com/reacttraining/react-router/tree/master/packages/react-router-config#renderroutesroutes-extraprops---switchprops--
