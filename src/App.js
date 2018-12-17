@@ -8,6 +8,8 @@ import './App.css';
 
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
+const Sep = () => <span> | </span>;
+
 const Header = () => {
   return (
     <div>
@@ -22,6 +24,47 @@ const Header = () => {
 }
 
 
+const HomeView = ({ routes }) => (
+  <div>
+  HomeView
+
+  {/*}<RouterConfigExample {...routes} />*/}
+
+  </div>
+)
+
+
+
+
+// const { match } = this.props
+//
+// console.log(match.path)
+// console.log(match.url)
+
+const GroceriesView = ({ match }) => (
+  <div>
+    GroceriesView - {match.url}
+  </div>
+)
+
+const GroceryView = ({ match }) => (
+  <div>
+    GroceryView - {match.url}
+  </div>
+)
+
+const ManageGroceryView = ({ match }) => (
+  <div>
+    ManageGroceryView - {match.url}
+  </div>
+)
+
+const DesignedGroceryView = ({ match }) => (
+  <div>
+  DesignedGroceryView - {match.url}
+  </div>
+)
+
 class App extends Component {
   render() {
     return (
@@ -32,11 +75,20 @@ class App extends Component {
         <Router>
           <div className="App">
           <div>
-                      <Route exact path="/" component={Home} />
-                      <Route exact path="/about" component={About} />
-                      <Route exact path="/code" component={Code} />
-                      <Route exact path="/contact" component={Contact} />
-                      <Route exact path="/presence" component={info} />
+                    <Header />
+
+                      <Route path="/" exact component={HomeView} />
+
+                      <Route path="/grocery/:id"  component={GroceryView} />
+
+                      <Route path="/design/grocery/:id"  component={DesignedGroceryView} />
+
+                      <Route path="/groceries"  component={GroceriesView} />
+
+                      <Route path="/manage/grocery/:id"  component={ManageGroceryView} />
+
+
+
                     </div>
           </div>
         </Router>

@@ -101,13 +101,13 @@ class Router extends Component {
 
           <Route path="/" exact component={HomeView} />
 
-          <Route path="/grocery/3"  component={GroceryView} />
+          <Route path="/grocery/:id"  component={GroceryView} />
 
-          <Route path="/design/grocery/3"  component={DesignedGroceryView} />
+          <Route path="/design/grocery/:id"  component={DesignedGroceryView} />
 
           <Route path="/groceries"  component={GroceriesView} />
 
-          <Route path="/manage/grocery/3"  component={ManageGroceryView} />
+          <Route path="/manage/grocery/:id"  component={ManageGroceryView} />
 
 
 
