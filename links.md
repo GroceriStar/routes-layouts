@@ -34,3 +34,13 @@ https://stackoverflow.com/questions/41474134/nested-routes-with-react-router-v4
 https://tylermcginnis.com/react-router-nested-routes/
 
 https://medium.com/@marxlow/simple-nested-routes-with-layouts-in-react-router-v4-59b8b63a1184
+
+---
+
+https://dev.to/nodefiend/quick-start-guide-for-react-router-v4-using-create-react-app-4h7j
+
+https://egghead.io/lessons/react-run-the-react-router-v4-examples-with-create-react-app
+
+https://facebook.github.io/create-react-app/docs/adding-a-router
+
+https://medium.com/tech-tajawal/react-router-v4-in-minutes-b839d35f66f1
