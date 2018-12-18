@@ -50,29 +50,9 @@ const HomeView = ({ routes }) => (
 // console.log(match.path)
 // console.log(match.url)
 
-const GroceriesView = ({ match }) => (
-  <div>
-    GroceriesView - {match.url}
-  </div>
-)
 
-const GroceryView = ({ match }) => (
-  <div>
-    GroceryView - {match.url}
-  </div>
-)
 
-const ManageGroceryView = ({ match }) => (
-  <div>
-    ManageGroceryView - {match.url}
-  </div>
-)
 
-const DesignedGroceryView = ({ match }) => (
-  <div>
-  DesignedGroceryView - {match.url}
-  </div>
-)
 
 // const Tacos = ({ match }) => (
 //   // here's a nested div
@@ -113,18 +93,6 @@ class Router extends Component {
 
 
           {/*
-
-            <Route path="/grocery/:id/:departmentId"  component={GroceryView} />
-            <Route path="/grocery/:id/full"  component={GroceryView} />
-
-            <Route path="/grocery/:id/print"  component={GroceryView} />
-            <Route path="/grocery/:id/clone"  component={GroceryView} />
-
-
-            <Route path="/grocery/:id/:departmentId/:status"  component={GroceryView} />
-            <Route path="/grocery/:id/:departmentId/all"  component={GroceryView} />
-            <Route path="/grocery/:id/:departmentId/purchased"  component={GroceryView} />
-            <Route path="/grocery/:id/:departmentId/the-third-key"  component={GroceryView} />
 
 
 

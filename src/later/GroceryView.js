@@ -7,8 +7,6 @@
   //   const { id } = this.props.match.params;
   //
 
-
-
   const HomeView = ({ routes }) => (
     <div>
     HomeView

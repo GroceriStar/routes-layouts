@@ -1,15 +1,21 @@
 import React, { Component, Fragment } from 'react';
-
-const HomeView = ({ routes }) => (
-  <div>
-  HomeView
-
-  {/*}<RouterConfigExample {...routes} />*/}
-
-  </div>
-)
+import {
+  Link, Route
+} from 'react-router-dom';
 
 
+const HomeView = ({ routes }) => {
+
+  // console.log(match);
+  return (
+    <div>
+      HomeView
+
+    {/*}<RouterConfigExample {...routes} />*/}
+
+    </div>
+  )
+}
 
 
 // const { match } = this.props
@@ -17,29 +23,68 @@ const HomeView = ({ routes }) => (
 // console.log(match.path)
 // console.log(match.url)
 
-const GroceriesView = ({ match }) => (
-  <div>
-    GroceriesView - {match.url}
-  </div>
-)
 
-const GroceryView = ({ match }) => (
-  <div>
-    GroceryView - {match.url}
-  </div>
-)
+// here we'll display list of groceries
+const GroceriesView = ({ match }) => {
 
-const ManageGroceryView = ({ match }) => (
-  <div>
-    ManageGroceryView - {match.url}
-  </div>
-)
+  console.log(match);
+  console.log(match.params);
+  const items = [
+    { id: 1, name: 'GL1', slug: 'first' },
+    { id: 2, name: 'GL2', slug: 'second' },
+    { id: 3, name: 'GL3', slug: 'third' },
+  ]
+  return (
+    <div>
+      GroceriesView - {match.url}
 
-const DesignedGroceryView = ({ match }) => (
-  <div>
-  DesignedGroceryView - {match.url}
-  </div>
-)
+      <hr />
+      <ul>
+        {items.map(({ name, id, slug }) => (
+          <li key={name}>
+            <Link to={`${match.url}/${id}`}>{name} - {slug}</Link>
+          </li>
+        ))}
+      </ul>
+      <hr />
+
+
+    </div>
+  )
+}
+
+const GroceryView = ({ match }) => {
+
+  console.log(match);
+  console.log(match.params);
+  return (
+    <div>
+      GroceryView - {match.url}
+    </div>
+  )
+}
+
+const ManageGroceryView = ({ match }) => {
+
+  console.log(match);
+  console.log(match.params);
+  return (
+    <div>
+      GroceryView - {match.url}
+    </div>
+  )
+}
+
+const DesignedGroceryView = ({ match }) => {
+
+  console.log(match);
+  console.log(match.params);
+  return (
+    <div>
+    DesignedGroceryView - {match.url}
+    </div>
+  )
+}
 
 export {
   HomeView,

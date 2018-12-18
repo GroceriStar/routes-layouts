@@ -21,17 +21,41 @@ class GRRouter extends Component {
           <Fragment>
 
           <Switch>
-          <Route path="/" exact component={HomeView} />
+            <Route path="/" exact component={HomeView} />
 
-          <Route path="/grocery/:id"  component={GroceryView} />
 
-          <Route path="/design/grocery/:id"  component={DesignedGroceryView} />
+            <Route path="/grocery/:id"  component={GroceryView} />
 
-          <Route path="/groceries"  component={GroceriesView} />
+            <Route path="/design/grocery/:id"  component={DesignedGroceryView} />
 
-          <Route path="/manage/grocery/:id"  component={ManageGroceryView} />
 
-          <Route component={NotFoundComponent}></Route>
+            <Route path="/groceries"  component={GroceriesView} />
+
+            <Route path="/manage/grocery/:id"  component={ManageGroceryView} />
+
+            <Route component={NotFoundComponent}></Route>
+
+
+
+
+
+            <Route path="/grocery/:id/full"  component={GroceryView} />
+
+            <Route path="/grocery/:id/print"  component={GroceryView} />
+
+            <Route path="/grocery/:id/clone"  component={GroceryView} />
+
+
+          
+            <Route path="/grocery/:id/:departmentId/:status"  component={GroceryView} />
+            <Route path="/grocery/:id/:departmentId/all"  component={GroceryView} />
+            <Route path="/grocery/:id/:departmentId/purchased"  component={GroceryView} />
+            <Route path="/grocery/:id/:departmentId/the-third-key"  component={GroceryView} />
+            <Route path="/grocery/:id/:departmentId"  component={GroceryView} />
+
+
+
+
 
           </Switch>
 
