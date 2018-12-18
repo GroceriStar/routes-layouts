@@ -1,4 +1,4 @@
-
+import React, { Component, Fragment } from 'react';
 
 const HomeView = ({ routes }) => (
   <div>

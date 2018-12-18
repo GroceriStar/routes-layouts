@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import './App.css';
 //
-// import Header from './components/Header';
+import Header from './components/Header';
 
 
 // import Router from './routes/showcase-router';
@@ -10,20 +10,9 @@ import GRRouter from './router-showcase-fragment';
 
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
-const Sep = () => <span> | </span>;
+// const Sep = () => <span> | </span>;
+//
 
-const Header = () => {
-  return (
-    <div>
-      <Link to="/">Home</Link> <Sep />
-      <Link to="/grocery/3">view grocery</Link> <Sep />
-      <Link to="/design/grocery/3">designed grocery page</Link> <Sep />
-      <Link to="/groceries">all groceries</Link>
-      <Link to="/manage/grocery/3">manage grocery</Link> <Sep />
-      <hr/>
-    </div>
-  )
-}
 
 
 const HomeView = ({ routes }) => (
@@ -78,18 +67,8 @@ class App extends Component {
           <div className="App">
           <div>
                     <Header />
-
-                      <Route path="/" exact component={HomeView} />
-
-                      <Route path="/grocery/:id"  component={GroceryView} />
-
-                      <Route path="/design/grocery/:id"  component={DesignedGroceryView} />
-
-                      <Route path="/groceries"  component={GroceriesView} />
-
-                      <Route path="/manage/grocery/:id"  component={ManageGroceryView} />
-
-
+                    <GRRouter />
+                    
 
                     </div>
           </div>
