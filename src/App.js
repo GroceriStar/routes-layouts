@@ -6,6 +6,8 @@ import './App.css';
 
 // import Router from './routes/showcase-router';
 
+import GRRouter from './router-showcase-fragment';
+
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 const Sep = () => <span> | </span>;
