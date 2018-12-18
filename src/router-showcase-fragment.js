@@ -2,7 +2,7 @@ import React, {
   Component, Fragment
 } from 'react';
 import {
-  Route
+  Switch, Route
 } from 'react-router-dom';
 
 import {
@@ -13,11 +13,14 @@ import {
   DesignedGroceryView
 } from './views';
 
+import NotFoundComponent from './components/NotFoundComponent'
+
 class GRRouter extends Component {
   render() {
     return (
           <Fragment>
 
+          <Switch>
           <Route path="/" exact component={HomeView} />
 
           <Route path="/grocery/:id"  component={GroceryView} />
@@ -28,6 +31,9 @@ class GRRouter extends Component {
 
           <Route path="/manage/grocery/:id"  component={ManageGroceryView} />
 
+          <Route component={NotFoundComponent}></Route>
+
+          </Switch>
 
 
 
