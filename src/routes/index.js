@@ -37,12 +37,14 @@ class AppRouter extends Component {
     return (
           <Switch>
               <Route path='/'            component={GroceryRouter} />
+
+
               <Route path='/department'  component={DepartmentRouter} />
 
 
               {/*}<Route path='/grocery'    component={GroceryRouter} /> */}
 
-                          <Route component={NotFoundComponent}></Route>
+              <Route component={NotFoundComponent}></Route>
 
 
           </Switch>

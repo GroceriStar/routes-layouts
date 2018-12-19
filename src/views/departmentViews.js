@@ -107,6 +107,64 @@ const ManageDepartmentView = ({ match }) => {
 //   )
 // }
 
+
+// -----------------------------
+
+
+// https://github.com/GroceriStar/groceristar/blob/master/server/controllers/department-controller.js
+
+const HomeView = ({ match }) => (
+  <div>
+  HomeView
+  </div>
+)
+
+const DepartmentByGroceryList  = ({ match }) => (
+  <div>
+    DepartmentByGroceryList
+  </div>
+)
+
+const DataByDepartment  = ({ match }) => (
+  <div>
+    DataByDepartment - we got an id
+  </div>
+)
+
+const HideDepartment  = ({ match }) => (
+  <div>
+    HideDepartment - we got an id
+  </div>
+)
+
+const RemoveDepartment  = ({ match }) => (
+  <div>
+  RemoveDepartment - we got an id
+  </div>
+)
+
+
+const ShowAllDepartment  = ({ match }) => (
+  <div>
+  ShowAllDepartment - we got an id
+  </div>
+)
+
+
+const ToggleStatus   = ({ match }) => (
+  <div>
+ToggleStatus - we got an id </div>
+)
+
+
+const UnhideDepartment  = ({ match }) => (
+  <div>
+  UnhideDepartment - we got an id
+  </div>
+)
+
+// -----------------------------
+
 export {
   DepartmentsView,
   DepartmentView,

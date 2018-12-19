@@ -86,6 +86,41 @@ const DesignedGroceryView = ({ match }) => {
   )
 }
 
+// --------------------------------
+
+
+const ChangeGroceryNameView = ({ match }) => {
+  return (
+    <div>
+    ChangeGroceryNameView - we got an id {match.url}
+      <hr/>
+    </div>
+  )
+}
+
+const CloneGroceryView  = ({ match }) => {
+  return (
+    <div>
+    CloneGroceryView  we got an id {match.url}
+      <hr/>
+    </div>
+  )
+}
+
+const CreateGroceryView  = ({ match }) => {
+  return (
+    <div>
+    CreateGroceryView
+      <hr/>
+    </div>
+  )
+}
+
+
+
+
+// ----------------------------------
+
 
 export {
   HomeView,
