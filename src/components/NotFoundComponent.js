@@ -1,7 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
-function NotFoundComponent (){
-	return <h1>404 - Sorry this page is not found</h1>
+function NotFoundComponent ({ location }){
+
+	return (
+		<Fragment>
+			<h1>404 - Sorry this page is not found</h1>
+		 	No match for <code>{location.pathname}</code>
+		</Fragment>
+	)
 }
 
 export default NotFoundComponent;

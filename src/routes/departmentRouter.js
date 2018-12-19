@@ -23,12 +23,9 @@ class DepartmentRouter extends Component {
             <Route path="/" exact component={DepartmentsView} />
 
 
-
-            <Route path="/grocery/:id/:departmentId/:status"  component={DepartmentView} />
-            <Route path="/grocery/:id/:departmentId/all"  component={DepartmentView} />
-            <Route path="/grocery/:id/:departmentId/purchased"  component={DepartmentView} />
-            <Route path="/grocery/:id/:departmentId/the-third-key"  component={DepartmentView} />
-            <Route path="/grocery/:id/:departmentId"  component={DepartmentView} />
+            {/* status: all, purchased, the-third-key and without status option */}
+            <Route path="/department/:id/:groceryId/:status"  component={DepartmentView} />
+            <Route path="/department/:id/:groceryId"  component={DepartmentView} />
 
 
 

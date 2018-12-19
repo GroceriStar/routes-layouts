@@ -57,6 +57,19 @@ const GroceryView = ({ match }) => {
 
   console.log(match);
   console.log(match.params);
+
+  console.log(match.params.status);
+
+  // we should have
+
+ // full
+  // if( status == 'full' )
+  // if( status == 'print' )
+  // if( status == 'clone' )
+ // print
+ // clone
+
+
   return (
     <div>
       GroceryView - {match.url}

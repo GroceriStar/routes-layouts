@@ -11,9 +11,11 @@ import {
   GroceryView,
   ManageGroceryView,
   DesignedGroceryView
+
+
 } from '../views';
 
-// import NotFoundComponent from '../components/NotFoundComponent'
+
 
 class GroceryRouter extends Component {
   render() {
@@ -35,26 +37,8 @@ class GroceryRouter extends Component {
 
 
 
-
-            <Route path="/grocery/:id/full"  component={GroceryView} />
-
-            <Route path="/grocery/:id/print"  component={GroceryView} />
-
-            <Route path="/grocery/:id/clone"  component={GroceryView} />
-
-
-
-
-
-
-            <Route path="/grocery/:id/:departmentId/:status"  component={GroceryView} />
-            <Route path="/grocery/:id/:departmentId/all"  component={GroceryView} />
-            <Route path="/grocery/:id/:departmentId/purchased"  component={GroceryView} />
-            <Route path="/grocery/:id/:departmentId/the-third-key"  component={GroceryView} />
-            <Route path="/grocery/:id/:departmentId"  component={GroceryView} />
-
-
-
+            {/*full, print, clone*/}
+            <Route path="/grocery/:id/:status"  component={GroceryView} />
 
 
 
@@ -65,3 +49,14 @@ class GroceryRouter extends Component {
   }
 }
 export default GroceryRouter;
+
+
+
+            //
+            // <Route path="/grocery/:id/:departmentId/:status"  component={GroceryView} />
+            // <Route path="/grocery/:id/:departmentId/all"  component={GroceryView} />
+            // <Route path="/grocery/:id/:departmentId/purchased"  component={GroceryView} />
+            // <Route path="/grocery/:id/:departmentId/the-third-key"  component={GroceryView} />
+            // <Route path="/grocery/:id/:departmentId"  component={GroceryView} />
+            //
+            //

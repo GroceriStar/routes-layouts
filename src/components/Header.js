@@ -23,10 +23,21 @@ const Header = () => {
       <Link to="/design/grocery/3">designed grocery page</Link> <Sep />
       <Link to="/groceries">all groceries</Link>  <Sep />
       <Link to="/manage/grocery/3">manage grocery</Link> <Sep />
+
+
+      <Sep />
+      <Sep />
+      <Sep />
+            <Link to="/grocery/3/full">FULL grocery</Link> <Sep />
+            <Link to="/grocery/3/print">Print grocery</Link> <Sep />
+            <Link to="/grocery/3/clone">Clone grocery</Link> <Sep />
+
       <hr/>
     </div>
   )
 }
+
+
 const HeaderDepartment = () => {
   return (
     <div>
