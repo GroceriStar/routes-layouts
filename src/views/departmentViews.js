@@ -10,9 +10,18 @@ const DepartmentsView = ({ routes }) => {
   // console.log(match);
   return (
     <div>
-      HomeView
+      DepartmentsView
 
-    {/*}<RouterConfigExample {...routes} />*/}
+    </div>
+  )
+}
+
+const DepartmentView = ({ routes }) => {
+
+  // console.log(match);
+  return (
+    <div>
+      DepartmentView
 
     </div>
   )
@@ -99,9 +108,8 @@ const ManageDepartmentView = ({ match }) => {
 // }
 
 export {
-  HomeView,
-  GroceriesView,
-  GroceryView,
-  ManageGroceryView,
-  DesignedGroceryView
+  DepartmentsView,
+  DepartmentView,
+  ManageDepartmentsView,
+  ManageDepartmentView
 }

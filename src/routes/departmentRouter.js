@@ -7,15 +7,15 @@ import {
 
 import {
   HomeView,
-  GroceriesView,
+  // GroceriesView,
   GroceryView,
-  ManageGroceryView,
-  DesignedGroceryView
+  // ManageGroceryView,
+  // DesignedGroceryView
 } from './views';
 
 import NotFoundComponent from './components/NotFoundComponent'
 
-class GRRouter extends Component {
+class DPRouter extends Component {
   render() {
     return (
           <Fragment>
@@ -23,27 +23,6 @@ class GRRouter extends Component {
           <Switch>
             <Route path="/" exact component={HomeView} />
 
-
-            <Route path="/grocery/:id"  component={GroceryView} />
-
-            <Route path="/design/grocery/:id"  component={DesignedGroceryView} />
-
-
-            <Route path="/groceries"  component={GroceriesView} />
-
-            <Route path="/manage/grocery/:id"  component={ManageGroceryView} />
-
-            <Route component={NotFoundComponent}></Route>
-
-
-
-
-
-            <Route path="/grocery/:id/full"  component={GroceryView} />
-
-            <Route path="/grocery/:id/print"  component={GroceryView} />
-
-            <Route path="/grocery/:id/clone"  component={GroceryView} />
 
 
 
@@ -68,4 +47,4 @@ class GRRouter extends Component {
     );
   }
 }
-export default GRRouter;
+export default DPRouter;
