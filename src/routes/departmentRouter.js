@@ -2,7 +2,7 @@ import React, {
   Component, Fragment
 } from 'react';
 import {
-  Switch, Route
+   Route
 } from 'react-router-dom';
 
 import {
@@ -12,29 +12,28 @@ import {
   ManageDepartmentView
 } from '../views';
 
-import NotFoundComponent from '../components/NotFoundComponent'
+// import NotFoundComponent from '../components/NotFoundComponent'
 
-class DPRouter extends Component {
+class DepartmentRouter extends Component {
   render() {
     return (
           <Fragment>
 
-          <Switch>
+
             <Route path="/" exact component={DepartmentsView} />
 
 
 
-            <Route path="/grocery/:id/:departmentId/:status"  component={GroceryView} />
-            <Route path="/grocery/:id/:departmentId/all"  component={GroceryView} />
-            <Route path="/grocery/:id/:departmentId/purchased"  component={GroceryView} />
-            <Route path="/grocery/:id/:departmentId/the-third-key"  component={GroceryView} />
-            <Route path="/grocery/:id/:departmentId"  component={GroceryView} />
+            <Route path="/grocery/:id/:departmentId/:status"  component={DepartmentView} />
+            <Route path="/grocery/:id/:departmentId/all"  component={DepartmentView} />
+            <Route path="/grocery/:id/:departmentId/purchased"  component={DepartmentView} />
+            <Route path="/grocery/:id/:departmentId/the-third-key"  component={DepartmentView} />
+            <Route path="/grocery/:id/:departmentId"  component={DepartmentView} />
 
 
 
 
 
-          </Switch>
 
 
 
@@ -42,4 +41,4 @@ class DPRouter extends Component {
     );
   }
 }
-export default DPRouter;
+export default DepartmentRouter;

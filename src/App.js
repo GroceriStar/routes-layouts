@@ -10,10 +10,12 @@ import Header from './components/Header';
 
 // import GRRouter from './router-showcase-fragment';
 
- import GRRouter from './routes/groceryRouter';
+import AppRouter from './routes';
+
+ // import GroceryRouter from './routes/groceryRouter';
 
 
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
 
 
@@ -21,6 +23,9 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 //
 // console.log(match.path)
 // console.log(match.url)
+// <Switch>
+//   <GroceryRouter />
+// </Switch>
 
 class App extends Component {
 
@@ -36,7 +41,9 @@ class App extends Component {
 
 
                 <Header />
-                <GRRouter />
+
+
+                <AppRouter />
 
 
             </div>
