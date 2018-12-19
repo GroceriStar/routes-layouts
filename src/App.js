@@ -8,7 +8,10 @@ import Header from './components/Header';
 
 // import Router from './routes/showcase-router';
 
-import GRRouter from './router-showcase-fragment';
+// import GRRouter from './router-showcase-fragment';
+
+ import GRRouter from './routes/groceryRouter';
+
 
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
@@ -20,7 +23,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 // console.log(match.url)
 
 class App extends Component {
-  
+
   render() {
     return (
       <Fragment>

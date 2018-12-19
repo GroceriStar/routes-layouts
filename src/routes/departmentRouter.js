@@ -6,14 +6,13 @@ import {
 } from 'react-router-dom';
 
 import {
-  HomeView,
-  // GroceriesView,
-  GroceryView,
-  // ManageGroceryView,
-  // DesignedGroceryView
-} from './views';
+  DepartmentsView,
+  DepartmentView,
+  ManageDepartmentsView,
+  ManageDepartmentView
+} from '../views';
 
-import NotFoundComponent from './components/NotFoundComponent'
+import NotFoundComponent from '../components/NotFoundComponent'
 
 class DPRouter extends Component {
   render() {
@@ -21,11 +20,7 @@ class DPRouter extends Component {
           <Fragment>
 
           <Switch>
-            <Route path="/" exact component={HomeView} />
-
-
-
-
+            <Route path="/" exact component={DepartmentsView} />
 
 
 
