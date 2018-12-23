@@ -12,7 +12,7 @@ import {
   ManageDepartmentView
 } from '../views';
 
-// import NotFoundComponent from '../components/NotFoundComponent'
+
 
 class DepartmentRouter extends Component {
   render() {

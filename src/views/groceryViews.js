@@ -4,6 +4,9 @@ import {
 } from 'react-router-dom';
 
 
+import { HeaderDepartment } from '../components/Header'
+
+
 const HomeView = ({ routes }) => {
 
   // console.log(match);
@@ -29,6 +32,7 @@ const GroceriesView = ({ match }) => {
 
   console.log(match);
   console.log(match.params);
+
   const items = [
     { id: 1, name: 'GL1', slug: 'first' },
     { id: 2, name: 'GL2', slug: 'second' },
@@ -73,6 +77,10 @@ const GroceryView = ({ match }) => {
   return (
     <div>
       GroceryView - {match.url}
+
+
+
+      <HeaderDepartment />
     </div>
   )
 }
@@ -81,6 +89,7 @@ const ManageGroceryView = ({ match }) => {
 
   console.log(match);
   console.log(match.params);
+
   return (
     <div>
       GroceryView - {match.url}
@@ -92,6 +101,7 @@ const DesignedGroceryView = ({ match }) => {
 
   console.log(match);
   console.log(match.params);
+
   return (
     <div>
     DesignedGroceryView - {match.url}

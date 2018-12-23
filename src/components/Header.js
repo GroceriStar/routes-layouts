@@ -26,13 +26,14 @@ const Header = () => {
 
 
       <Sep />
-      <Sep />
-      <Sep />
+
             <Link to="/grocery/3/full">FULL grocery</Link> <Sep />
             <Link to="/grocery/3/print">Print grocery</Link> <Sep />
             <Link to="/grocery/3/clone">Clone grocery</Link> <Sep />
 
       <hr/>
+
+              // <Link to="/grocery/3/clone">Clone grocery</Link> <Sep />
     </div>
   )
 }
@@ -40,41 +41,64 @@ const Header = () => {
 
 const HeaderDepartment = () => {
   return (
-    <div>
-      <Link to="/">Home</Link> <Sep />
-      <Link to="/grocery/:id">Catalog</Link> <Sep />
-      <Link to="/design/grocery/:id">Another</Link> <Sep />
-      <Link to="/groceries">Nested</Link>
-      <Link to="/manage/grocery/:id">Nested</Link>
+    <ul>
+
+      <li>
+        <Link to={{ pathname: "/department/10/5" }}>
+           view department
+         </Link>
+       </li>
+       <li>
+         <Link to={{ pathname: "/department/3/1", search: "?status=all" }}>
+           STATUS: ALL
+         </Link>
+       </li>
+       <li>
+         <Link to={{ pathname: "/department/3/1", search: "?status=purchased" }}>
+           Status: purchased
+         </Link>
+       </li>
+       <li>
+         <Link to={{ pathname: "/department/3/1", search: "?status=the-third-key" }}>
+           STATUS: THIRD=item
+         </Link>
+
+
       <hr/>
-    </div>
+    </ul>
   )
 }
 
-const HeaderIngredient = () => {
-  return (
-    <div>
-      <Link to="/">Home</Link> <Sep />
-      <Link to="/grocery/:id">Catalog</Link> <Sep />
-      <Link to="/design/grocery/:id">Another</Link> <Sep />
-      <Link to="/groceries">Nested</Link>
-      <Link to="/manage/grocery/:id">Nested</Link>
-      <hr/>
-    </div>
-  )
-}
 
-const HeaderShoplist = () => {
-  return (
-    <div>
-      <Link to="/">Home</Link> <Sep />
-      <Link to="/grocery/:id">Catalog</Link> <Sep />
-      <Link to="/design/grocery/:id">Another</Link> <Sep />
-      <Link to="/groceries">Nested</Link>
-      <Link to="/manage/grocery/:id">Nested</Link>
-      <hr/>
-    </div>
-  )
-}
+// 
+// const HeaderIngredient = () => {
+//   return (
+//     <div>
+//       <Link to="/">Home</Link> <Sep />
+//       <Link to="/grocery/:id">Catalog</Link> <Sep />
+//       <Link to="/design/grocery/:id">Another</Link> <Sep />
+//       <Link to="/groceries">Nested</Link>
+//       <Link to="/manage/grocery/:id">Nested</Link>
+//       <hr/>
+//     </div>
+//   )
+// };
 
-export default Header;
+ // const HeaderShoplist = () => {
+//   return (
+//     <div>
+//       <Link to="/">Home</Link> <Sep />
+//       <Link to="/grocery/:id">Catalog</Link> <Sep />
+//       <Link to="/design/grocery/:id">Another</Link> <Sep />
+//       <Link to="/groceries">Nested</Link>
+//       <Link to="/manage/grocery/:id">Nested</Link>
+//       <hr/>
+//     </div>
+//   )
+// };
+
+// export default Header;
+export {
+  Header,
+  HeaderDepartment
+}
