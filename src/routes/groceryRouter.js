@@ -16,7 +16,7 @@ import {
 } from '../views';
 
 
-const routes = [
+const routesee = [
   {
     path: "/",
     component: HomeView
@@ -92,7 +92,12 @@ class GroceryRouter extends Component {
     );
   }
 }
-export default GroceryRouter;
+export {
+  GroceryRouter,
+  routesee //@TODO bad name
+}
+  ;
+// export default GroceryRouter;
 
 
 

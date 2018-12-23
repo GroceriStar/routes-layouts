@@ -14,7 +14,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
 
 
-import { GroceryRouter, routesee } from './groceryRouter';
+import { GroceryRouter } from './groceryRouter';
 
 import {
   HomeView,
@@ -53,31 +53,6 @@ import NotFoundComponent from '../components/NotFoundComponent'
 
 
 
-  const RouterConfigExample = (routes) => {
-
-    return (
-      <Fragment>
-      {routes &&
-        routes.map((route, i) => (
-            <RouteWithSubRoutes key={i} {...route} />
-          ))
-      }
-      </Fragment>
-    );
-  }
-
-  function RouteWithSubRoutes(route) {
-    return (
-      <Route
-        path={route.path}
-        render={props => (
-          // pass the sub-routes down to keep nesting
-          <route.component {...props} routes={route.routes} />
-        )}
-      />
-    );
-  }
-
 
 
 
@@ -89,6 +64,8 @@ class AppRouter extends Component {
 
     return (
           <Switch>
+
+
 
             <Route path="/" exact component={HomeView} />
 
@@ -114,7 +91,21 @@ class AppRouter extends Component {
 
 
 
-              <Route component={NotFoundComponent} />
+
+
+              <Route path="/departments" exact component={DepartmentsView} />
+
+
+              {/* status: all, purchased, the-third-key and without status option */}
+                <Route path="/department/:id/:groceryId/:status"  component={DepartmentView} />
+              <Route path="/department/:id/:groceryId"  component={DepartmentView} />
+
+
+
+
+              {/*}<Route path='/grocery'    component={GroceryRouter} /> */}
+
+              <Route component={NotFoundComponent}></Route>
 
 
           </Switch>
