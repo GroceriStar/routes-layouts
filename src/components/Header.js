@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const Sep = () => <span>  |  </span>;
 
@@ -39,38 +39,8 @@ const Header = () => {
 }
 
 
-const HeaderDepartment = () => {
-  return (
-    <ul>
 
-      <li>
-        <Link to={{ pathname: "/department/10/5" }}>
-           view department
-         </Link>
-       </li>
-       <li>
-         <Link to={{ pathname: "/department/3/1", search: "?status=all" }}>
-           STATUS: ALL
-         </Link>
-       </li>
-       <li>
-         <Link to={{ pathname: "/department/3/1", search: "?status=purchased" }}>
-           Status: purchased
-         </Link>
-       </li>
-       <li>
-         <Link to={{ pathname: "/department/3/1", search: "?status=the-third-key" }}>
-           STATUS: THIRD=item
-         </Link>
-
-
-      <hr/>
-    </ul>
-  )
-}
-
-
-// 
+//
 // const HeaderIngredient = () => {
 //   return (
 //     <div>
@@ -97,8 +67,4 @@ const HeaderDepartment = () => {
 //   )
 // };
 
-// export default Header;
-export {
-  Header,
-  HeaderDepartment
-}
+export default Header;

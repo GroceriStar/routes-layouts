@@ -4,7 +4,7 @@ import {
 } from 'react-router-dom';
 
 
-import { HeaderDepartment } from '../components/Header'
+import HeaderDepartment from '../components/HeaderDepartment'
 
 
 const HomeView = ({ routes }) => {
