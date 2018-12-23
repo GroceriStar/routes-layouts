@@ -11,12 +11,14 @@ class PrivateLayout extends Component {
             <div>
                 <h1>Private Layout</h1>
                 <h2>Hello {user.name}</h2>
+
                 <ul>
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/contact'>Contact</Link></li>
                     <li><Link to='/profile'>Profile</Link></li>
                     <li><Link to='/profile/posts'>Posts</Link></li>
                 </ul>
+                
                 <button onClick={() => {userActions.logout()}}>Logout</button>
                 <Component route={route}/>
             </div>
