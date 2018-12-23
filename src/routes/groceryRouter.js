@@ -16,6 +16,50 @@ import {
 } from '../views';
 
 
+const routes = [
+  {
+    path: "/",
+    component: HomeView
+  },
+  {
+    path: "/groceries",
+    component: GroceriesView
+  },
+  {
+    path: "/grocery/:id",
+    component: GroceryView,
+    routes: [
+      {
+        path: "/grocery/:id/design",
+        component: DesignedGroceryView
+      },
+      {
+        path: "/grocery/:id/manage",
+        component: ManageGroceryView
+      },
+      {
+        path: "/grocery/:id/:status",
+        component: GroceryView
+      },
+    ]
+  },
+
+  // {
+  //   path: "/design/grocery/:id",
+  //   component: DesignedGroceryView
+  // },
+  // {
+  //   path: "/manage/grocery/:id",
+  //   component: ManageGroceryView
+  // },
+  // {
+  //   path: "/grocery/:id/:status",
+  //   component: GroceryView
+  // },
+
+
+];
+
 
 class GroceryRouter extends Component {
   render() {

@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-class PrivateLayout extends Component {
+import Header from './Header';
+
+
+class GroceryLayout extends Component {
     render() {
         const Component = this.props.component;
         const route     = this.props.route;
@@ -18,7 +21,7 @@ class PrivateLayout extends Component {
                     <li><Link to='/profile'>Profile</Link></li>
                     <li><Link to='/profile/posts'>Posts</Link></li>
                 </ul>
-                
+
                 <button onClick={() => {userActions.logout()}}>Logout</button>
                 <Component route={route}/>
             </div>
@@ -27,4 +30,4 @@ class PrivateLayout extends Component {
 }
 
 
-export default PrivateLayout
+export default GroceryLayout
