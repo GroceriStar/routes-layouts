@@ -1,7 +1,7 @@
-import React, { Component, Fragment } from 'react';
-import {
-  Link, Route
-} from 'react-router-dom';
+import React from 'react';
+// import {
+//   Link, Route
+// } from 'react-router-dom';
 
 
 // it's a view, related to display list of links to viewing ingredients.
@@ -23,6 +23,7 @@ const DepartmentsView = ({ match }) => {
     </div>
   )
 }
+
 
 const DepartmentView = ({ match }) => {
 

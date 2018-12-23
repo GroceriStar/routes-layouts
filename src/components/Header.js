@@ -17,7 +17,7 @@ const Sep = () => <span>  |  </span>;
 // }
 const Header = () => {
   return (
-    <div>
+    <Fragment>
       <Link to="/">Home</Link> <Sep />
       <Link to="/grocery/3">view grocery</Link> <Sep />
       <Link to="/design/grocery/3">designed grocery page</Link> <Sep />
@@ -34,7 +34,7 @@ const Header = () => {
       <hr/>
 
 
-    </div>
+    </Fragment>
   )
 }
 

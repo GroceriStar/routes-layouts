@@ -1,6 +1,6 @@
-import React, { Component, Fragment } from 'react';
+import React from 'react';
 import {
-  Link, Route
+  Link
 } from 'react-router-dom';
 
 
@@ -109,35 +109,75 @@ const DesignedGroceryView = ({ match }) => {
   )
 }
 
+const CloneGroceryView = ({ match }) => {
+
+  console.log(match);
+  console.log(match.params);
+
+  return (
+    <div>
+      CloneGroceryView - {match.url}
+    </div>
+  )
+}
+
+
+
+const PrintGroceryView = ({ match }) => {
+
+  console.log(match);
+  console.log(match.params);
+
+  return (
+    <div>
+      PrintGroceryView - {match.url}
+    </div>
+  )
+}
+
+
+const FullGroceryView = ({ match }) => {
+
+  console.log(match);
+  console.log(match.params);
+
+  return (
+    <div>
+      FullGroceryView - {match.url}
+    </div>
+  )
+}
+
+
 // --------------------------------
 
 
-const ChangeGroceryNameView = ({ match }) => {
-  return (
-    <div>
-    ChangeGroceryNameView - we got an id {match.url}
-      <hr/>
-    </div>
-  )
-}
-
-const CloneGroceryView  = ({ match }) => {
-  return (
-    <div>
-    CloneGroceryView  we got an id {match.url}
-      <hr/>
-    </div>
-  )
-}
-
-const CreateGroceryView  = ({ match }) => {
-  return (
-    <div>
-    CreateGroceryView
-      <hr/>
-    </div>
-  )
-}
+// const ChangeGroceryNameView = ({ match }) => {
+//   return (
+//     <div>
+//     ChangeGroceryNameView - we got an id {match.url}
+//       <hr/>
+//     </div>
+//   )
+// }
+//
+// const CloneGroceryView  = ({ match }) => {
+//   return (
+//     <div>
+//     CloneGroceryView  we got an id {match.url}
+//       <hr/>
+//     </div>
+//   )
+// }
+//
+// const CreateGroceryView  = ({ match }) => {
+//   return (
+//     <div>
+//     CreateGroceryView
+//       <hr/>
+//     </div>
+//   )
+// }
 
 
 
@@ -150,5 +190,10 @@ export {
   GroceriesView,
   GroceryView,
   ManageGroceryView,
-  DesignedGroceryView
+  DesignedGroceryView,
+
+
+  PrintGroceryView,
+  FullGroceryView,
+  CloneGroceryView,
 }

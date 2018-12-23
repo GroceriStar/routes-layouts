@@ -13,7 +13,7 @@ import  Header from './components/Header';
 import AppRouter from './routes';
 
 
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import { BrowserRouter as Router,  } from 'react-router-dom';
 
 
 

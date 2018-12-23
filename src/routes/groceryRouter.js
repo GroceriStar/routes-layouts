@@ -10,8 +10,10 @@ import {
   GroceriesView,
   GroceryView,
   ManageGroceryView,
-  DesignedGroceryView
-
+  DesignedGroceryView,
+  PrintGroceryView,
+  FullGroceryView,
+  CloneGroceryView,
 
 } from '../views';
 
@@ -19,10 +21,10 @@ import {
 // import rouTE from 'route'
 
 const routesee = [
-  {
-    path: "/",
-    component: HomeView
-  },
+  // {
+  //   path: "/",
+  //   component: HomeView
+  // },
   {
     path: "/groceries",
     component: GroceriesView
@@ -32,32 +34,32 @@ const routesee = [
     component: GroceryView,
     routes: [
       {
-        path: "/grocery/:id/design",
-        component: DesignedGroceryView
+        path: "/grocery/:id/full",
+        component: FullGroceryView
       },
       {
-        path: "/grocery/:id/manage",
-        component: ManageGroceryView
+        path: "/grocery/:id/print",
+        component: PrintGroceryView
       },
       {
-        path: "/grocery/:id/:status",
-        component: GroceryView
+        path: "/grocery/:id/clone",
+        component: CloneGroceryView
       },
     ]
   },
 
-  // {
-  //   path: "/design/grocery/:id",
-  //   component: DesignedGroceryView
-  // },
-  // {
-  //   path: "/manage/grocery/:id",
-  //   component: ManageGroceryView
-  // },
-  // {
-  //   path: "/grocery/:id/:status",
-  //   component: GroceryView
-  // },
+  {
+    path: "/design/grocery/:id",
+    component: DesignedGroceryView
+  },
+  {
+    path: "/manage/grocery/:id",
+    component: ManageGroceryView
+  },
+  {
+    path: "/grocery/:id/:status",
+    component: GroceryView
+  },
 
 
 ];

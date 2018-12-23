@@ -1,5 +1,5 @@
 import React, {
-  Component, Fragment
+  Component
 } from 'react';
 
 // import {
@@ -9,7 +9,7 @@ import React, {
 
 import {
   // BrowserRouter as Router,
-   Route, Link, Switch } from 'react-router-dom';
+   Route, Switch } from 'react-router-dom';
 
 
 // import Router from './showcase-router'
@@ -24,6 +24,12 @@ import { GroceryRouter, routesee as routes1 } from './groceryRouter';
 import  { DepartmentRouter, routesse as routes2 } from './departmentRouter'
 
 
+import {
+  HomeView
+
+
+
+} from '../views';
 
 
 // import IngredientsRouter from ''
@@ -57,6 +63,7 @@ class AppRouter extends Component {
 
     return (
           <Switch>
+            <Route path="/" exact component={HomeView} />
 
             {RouterConfigExample(routes1)}
 

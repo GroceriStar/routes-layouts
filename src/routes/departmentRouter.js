@@ -16,7 +16,7 @@ import {
 
 const routesse = [
   {
-    path: "/departments",
+    path: "/departments/:groceryId",
     component: DepartmentsView
   },
   // {
@@ -26,26 +26,26 @@ const routesse = [
   {
     path: "/department/:id/:groceryId",
     component: DepartmentView,
-    routes: [
-      {
-        path: "/department/:id/:groceryId/:status",
-        component: DepartmentView
-      },
-      // {
-      //   path: "/grocery/:id/manage",
-      //   component: ManageGroceryView
-      // },
-      // {
-      //   path: "/grocery/:id/:status",
-      //   component: GroceryView
-      // },
-    ]
+    // routes: [
+    //   {
+    //     path: "/department/:id/:groceryId/:status",
+    //     component: DepartmentView
+    //   },
+    //   {
+    //     path: "/grocery/:id/manage",
+    //     component: ManageGroceryView
+    //   },
+    //   {
+    //     path: "/grocery/:id/:status",
+    //     component: GroceryView
+    //   },
+    // ]
   },
 
-  // {
-  //   path: "/department/:id/:groceryId/:status",
-  //   component: DepartmentView
-  // },
+  {
+    path: "/department/:id/:groceryId/:status",
+    component: DepartmentView
+  },
 
 
 ];
@@ -55,7 +55,7 @@ const routesse = [
 class DepartmentRouter extends Component {
   render() {
     return (
-      
+
       <Fragment>
 
 
