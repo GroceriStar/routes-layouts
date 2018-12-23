@@ -1,5 +1,5 @@
 import React, {
-  Component
+  Component, Fragment
 } from 'react';
 
 // import {
@@ -7,14 +7,16 @@ import React, {
 //   Route
 // } from 'react-router-dom';
 
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import {
+  // BrowserRouter as Router,
+   Route, Link, Switch } from 'react-router-dom';
 
 
 // import Router from './showcase-router'
 
 
 
-import { GroceryRouter, routesee } from './groceryRouter';
+import { GroceryRouter, routesee as grocery_routes } from './groceryRouter';
 
 import {
   HomeView,
@@ -52,66 +54,22 @@ import NotFoundComponent from '../components/NotFoundComponent'
 
 
 
-
-  const RouterConfigExample = (routes) => {
-
-    return (
-      <Fragment>
-      {routes &&
-        routes.map((route, i) => (
-            <RouteWithSubRoutes key={i} {...route} />
-          ))
-      }
-      </Fragment>
-    );
-  }
-
-  function RouteWithSubRoutes(route) {
-    return (
-      <Route
-        path={route.path}
-        render={props => (
-          // pass the sub-routes down to keep nesting
-          <route.component {...props} routes={route.routes} />
-        )}
-      />
-    );
-  }
-
-
+import {
+  RouterConfigExample,
+  RouteWithSubRoutes
+} from './TheConfig'
 
 
 class AppRouter extends Component {
   render() {
 
-    console.log( routesee )
+    console.log( grocery_routes )
 
 
     return (
           <Switch>
 
-            <Route path="/" exact component={HomeView} />
-
-
-            <Route path="/grocery/:id"  component={GroceryView} />
-
-            <Route path="/design/grocery/:id"  component={DesignedGroceryView} />
-
-
-            <Route path="/groceries"  component={GroceriesView} />
-
-            <Route path="/manage/grocery/:id"  component={ManageGroceryView} />
-
-
-
-
-            {/*full, print, clone*/}
-            <Route path="/grocery/:id/:status"  component={GroceryView} />
-
-
-
-
-
+            {RouterConfigExample(grocery_routes)}
 
 
               <Route component={NotFoundComponent} />
