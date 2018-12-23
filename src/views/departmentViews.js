@@ -5,23 +5,35 @@ import {
 
 
 // it's a view, related to display list of links to viewing ingredients.
-const DepartmentsView = ({ routes }) => {
+// in this view is important to get grocery id and user id for logged in cases as well.
+const DepartmentsView = ({ match }) => {
 
   // console.log(match);
+  console.log(match);
+  console.log(match.params);
+
+  console.log(match.params.status);
+
+
+
   return (
     <div>
-      DepartmentsView
+      DepartmentsView - {match.url}
 
     </div>
   )
 }
 
-const DepartmentView = ({ routes }) => {
+const DepartmentView = ({ match }) => {
 
   // console.log(match);
+  console.log(match);
+  console.log(match.params);
+
+  console.log(match.params.status);
   return (
     <div>
-      DepartmentView
+      DepartmentView - {match.url}
 
     </div>
   )
@@ -96,72 +108,55 @@ const ManageDepartmentView = ({ match }) => {
   )
 }
 
-// const DesignedGroceryView = ({ match }) => {
-//
-//   console.log(match);
-//   console.log(match.params);
-//   return (
-//     <div>
-//     DesignedGroceryView - {match.url}
-//     </div>
-//   )
-// }
-
-
 // -----------------------------
 
 
 // https://github.com/GroceriStar/groceristar/blob/master/server/controllers/department-controller.js
 
-const HomeView = ({ match }) => (
-  <div>
-  HomeView
-  </div>
-)
 
-const DepartmentByGroceryList  = ({ match }) => (
-  <div>
-    DepartmentByGroceryList
-  </div>
-)
-
-const DataByDepartment  = ({ match }) => (
-  <div>
-    DataByDepartment - we got an id
-  </div>
-)
-
-const HideDepartment  = ({ match }) => (
-  <div>
-    HideDepartment - we got an id
-  </div>
-)
-
-const RemoveDepartment  = ({ match }) => (
-  <div>
-  RemoveDepartment - we got an id
-  </div>
-)
-
-
-const ShowAllDepartment  = ({ match }) => (
-  <div>
-  ShowAllDepartment - we got an id
-  </div>
-)
-
-
-const ToggleStatus   = ({ match }) => (
-  <div>
-ToggleStatus - we got an id </div>
-)
-
-
-const UnhideDepartment  = ({ match }) => (
-  <div>
-  UnhideDepartment - we got an id
-  </div>
-)
+// const DepartmentByGroceryList  = ({ match }) => (
+//   <div>
+//     DepartmentByGroceryList
+//   </div>
+// )
+//
+// const DataByDepartment  = ({ match }) => (
+//   <div>
+//     DataByDepartment - we got an id
+//   </div>
+// )
+//
+// const HideDepartment  = ({ match }) => (
+//   <div>
+//     HideDepartment - we got an id
+//   </div>
+// )
+//
+// const RemoveDepartment  = ({ match }) => (
+//   <div>
+//   RemoveDepartment - we got an id
+//   </div>
+// )
+//
+//
+// const ShowAllDepartment  = ({ match }) => (
+//   <div>
+//   ShowAllDepartment - we got an id
+//   </div>
+// )
+//
+//
+// const ToggleStatus   = ({ match }) => (
+//   <div>
+// ToggleStatus - we got an id </div>
+// )
+//
+//
+// const UnhideDepartment  = ({ match }) => (
+//   <div>
+//   UnhideDepartment - we got an id
+//   </div>
+// )
 
 // -----------------------------
 

@@ -20,7 +20,7 @@ class DepartmentRouter extends Component {
           <Fragment>
 
 
-            <Route path="/" exact component={DepartmentsView} />
+            <Route path="/departments" exact component={DepartmentsView} />
 
 
             {/* status: all, purchased, the-third-key and without status option */}

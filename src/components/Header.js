@@ -33,7 +33,7 @@ const Header = () => {
 
       <hr/>
 
-              // <Link to="/grocery/3/clone">Clone grocery</Link> <Sep />
+
     </div>
   )
 }

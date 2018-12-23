@@ -40,7 +40,7 @@ class AppRouter extends Component {
               <Route path='/'            component={GroceryRouter} />
 
 
-              <Route path='/department'  component={DepartmentRouter} />
+              <Route path='/departments'  component={DepartmentRouter} />
 
 
               {/*}<Route path='/grocery'    component={GroceryRouter} /> */}
