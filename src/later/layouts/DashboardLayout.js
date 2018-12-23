@@ -1,7 +1,19 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
- class PrivateLayout extends Component {
+const Wrapper = ({ children }) => (
+  <ul>
+    {children}
+  </ul>
+);
+
+const Comp = ({  }) => (
+  <Wrapper>
+    ...
+  </Wrapper>
+);
+
+ class DashboardLayout extends Component {
     render() {
         const Component = this.props.component;
         const route = this.props.route;

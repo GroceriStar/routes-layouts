@@ -4,6 +4,18 @@ import { Link } from 'react-router-dom';
 import Header from './Header';
 
 
+const Wrapper = ({ children }) => (
+  <ul>
+    {children}
+  </ul>
+);
+
+const Comp = ({  }) => (
+  <Wrapper>
+    ...
+  </Wrapper>
+);
+
 class GroceryLayout extends Component {
     render() {
         const Component = this.props.component;

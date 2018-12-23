@@ -1,6 +1,19 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+
+const Wrapper = ({ children }) => (
+  <ul>
+    {children}
+  </ul>
+);
+
+const Comp = ({  }) => (
+  <Wrapper>
+    ...
+  </Wrapper>
+);
+
 class PrivateLayout extends Component {
     render() {
         const Component = this.props.component;

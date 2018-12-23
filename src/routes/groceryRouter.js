@@ -16,6 +16,8 @@ import {
 } from '../views';
 
 
+// import rouTE from 'route'
+
 const routesee = [
   {
     path: "/",

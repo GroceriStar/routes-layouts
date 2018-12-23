@@ -16,28 +16,14 @@ import {
 
 
 
-import { GroceryRouter, routesee as grocery_routes } from './groceryRouter';
-
-import {
-  HomeView,
-  GroceriesView,
-  GroceryView,
-  ManageGroceryView,
-  DesignedGroceryView
-
-
-} from '../views';
+import { GroceryRouter, routesee as routes1 } from './groceryRouter';
 
 
 
-import DepartmentRouter from './departmentRouter'
 
-import {
-  DepartmentsView,
-  DepartmentView,
-  ManageDepartmentsView,
-  ManageDepartmentView
-} from '../views';
+import  { DepartmentRouter, routesse as routes2 } from './departmentRouter'
+// import { GroceryRouter, routesee as grocery_routes } from './groceryRouter';
+
 
 
 // import IngredientsRouter from ''
@@ -53,26 +39,31 @@ import {
 import NotFoundComponent from '../components/NotFoundComponent'
 
 
-
+// @TODO replace with a separated functions from separate route config functions
+// main goal is to separate functions
 import {
-  RouterConfigExample,
-  RouteWithSubRoutes
+  RouterConfigExample
+  // ,
+  // RouteWithSubRoutes
 } from './TheConfig'
+
 
 
 class AppRouter extends Component {
   render() {
 
-    console.log( grocery_routes )
+    // console.log( grocery_routes )
 
 
     return (
           <Switch>
 
-            {RouterConfigExample(grocery_routes)}
+            {RouterConfigExample(routes1)}
+
+            {RouterConfigExample(routes2)}
 
 
-              <Route component={NotFoundComponent} />
+            <Route component={NotFoundComponent} />
 
 
           </Switch>
