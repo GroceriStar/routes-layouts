@@ -7,8 +7,6 @@ import {
    Route } from 'react-router-dom';
 
 
-import _ from 'lodash';
-
 // @TODO think about converting into a component. at least for now - when we try to call it as component it generate an issue
 // <RouterConfigExample routes={routes} />}
 
@@ -40,27 +38,9 @@ function RouteWithSubRoutes(route) {
 }
 
 
-const renderRoutes = (routes) => {
-  return (
-    <Fragment>
-      {routes &&
-        routes.map((route, i) => (
-
-            <Route
-              key={i}
-              path={route.path}
-              component={route.component}
-            />
-
-          ))
-      }
-    </Fragment>
-  );
-};
-
 export {
   RouterConfigExample,
   RouteWithSubRoutes,
 
-  renderRoutes
+
 }

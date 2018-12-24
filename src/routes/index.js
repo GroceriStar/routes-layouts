@@ -16,12 +16,12 @@ import {
 
 
 
-import { GroceryRouter, routesee as routes1 } from './groceryRouter';
+import { routesee as grocery_routes } from './groceryRouter';
 
 
 
 
-import  { DepartmentRouter, routesse as routes2 } from './departmentRouter'
+import  {  routesse as department_routes } from './departmentRouter'
 
 
 import {
@@ -59,7 +59,8 @@ import {
 class AppRouter extends Component {
   render() {
 
-    // console.log( grocery_routes )
+    console.log( grocery_routes )
+    console.log( department_routes )
 
 
     return (
@@ -68,7 +69,9 @@ class AppRouter extends Component {
 
             {/*renderRoutes(routes1)*/}
 
-            {renderRoutes(routes2)}
+            {/*renderRoutes(routes2)*/}
+
+
 
 
             <Route component={NotFoundComponent} />
