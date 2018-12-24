@@ -1,9 +1,4 @@
-
-const routesee = [
-  // {
-  //   path: "/",
-  //   component: HomeView
-  // },
+const routes = [
   {
     path: "/groceries",
     component: GroceriesView
@@ -42,8 +37,6 @@ const routesee = [
   },
 
 
-
-
   {
     path: "/design/grocery/:id",
     component: DesignedGroceryView
@@ -51,7 +44,7 @@ const routesee = [
   {
     path: "/manage/grocery/:id",
     component: ManageGroceryView
-  },
+  }
   // {
   //   path: "/grocery/:id/:status",
   //   component: GroceryView
@@ -60,6 +53,4 @@ const routesee = [
 
 ];
 
-//
-//
-// export default routes;
+export default routes;

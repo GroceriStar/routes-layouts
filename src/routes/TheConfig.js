@@ -38,7 +38,30 @@ function RouteWithSubRoutes(route) {
 }
 
 
+const renderRoutes = (routes) => {
+  return (
+    <Fragment>
+      {routes &&
+        routes.map((route, i) => (
+
+            <Route
+              key={i}
+              path={route.path}
+              render={props => (
+                // pass the sub-routes down to keep nesting
+                <route.component {...props} />
+              )}
+            />
+
+          ))
+      }
+    </Fragment>
+  );
+};
+
 export {
   RouterConfigExample,
-  RouteWithSubRoutes
+  RouteWithSubRoutes,
+
+  renderRoutes
 }

@@ -49,6 +49,7 @@ import NotFoundComponent from '../components/NotFoundComponent'
 // main goal is to separate functions
 import {
   RouterConfigExample
+  , renderRoutes
   // ,
   // RouteWithSubRoutes
 } from './TheConfig'
@@ -65,9 +66,9 @@ class AppRouter extends Component {
           <Switch>
             <Route path="/" exact component={HomeView} />
 
-            {RouterConfigExample(routes1)}
+            {/*renderRoutes(routes1)*/}
 
-            {RouterConfigExample(routes2)}
+            {renderRoutes(routes2)}
 
 
             <Route component={NotFoundComponent} />
