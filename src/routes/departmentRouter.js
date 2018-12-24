@@ -15,9 +15,6 @@ import {
 
 // import rouTE from 'route'
 
-// /manage/departments/:groceryId
-// /manage/department/:groceryId:/departmentId
-
 const routesse = [
   {
     path: "/departments/:groceryId",
@@ -30,7 +27,15 @@ const routesse = [
   {
     path: "/department/:id/:groceryId/:status",
     component: DepartmentView
-  }
+  },
+  {
+    path: "/manage/departments/:groceryId",
+    component: ManageDepartmentsView
+  },
+  {
+    path: "/manage/department/:groceryId:/departmentId",
+    component: ManageDepartmentView
+  },
 ];
 
 

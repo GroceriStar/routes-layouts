@@ -49,6 +49,19 @@ const HeaderDepartment = () => {
           1STATUS: THIRD=item
         </Link>
      </li>
+     <li>xxxx</li>
+     <li>xxxx</li>
+     <li>xxxx</li>
+     <li>
+       <Link to={{ pathname: "/manage/departments/3" }}>
+         1Status: purchased
+       </Link>
+     </li>
+     <li>
+       <Link to={{ pathname: "/manage/department/3/1" }}>
+         1STATUS: THIRD=item
+       </Link>
+    </li>
     </ul>
   )
 };
