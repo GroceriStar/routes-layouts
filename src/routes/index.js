@@ -47,20 +47,20 @@ import NotFoundComponent from '../components/NotFoundComponent'
 
 // @TODO replace with a separated functions from separate route config functions
 // main goal is to separate functions
-import {
-  RouterConfigExample
-  , renderRoutes
-  // ,
-  // RouteWithSubRoutes
-} from './TheConfig'
+// import {
+//   RouterConfigExample
+//   , renderRoutes
+//   // ,
+//   // RouteWithSubRoutes
+// } from './TheConfig'
 
-
+import _ from 'lodash';
 
 class AppRouter extends Component {
   render() {
 
-    console.log( grocery_routes )
-    console.log( department_routes )
+    // console.log( grocery_routes )
+    // console.log( department_routes )
 
 
     return (
@@ -72,7 +72,35 @@ class AppRouter extends Component {
             {/*renderRoutes(routes2)*/}
 
 
+            { _.map(grocery_routes, (route, key) => {
 
+              const { component, path } = route;
+
+              return (
+                <Route
+                  exact
+                  key={key}
+                  path={path}
+                  component={component}
+                />
+              );
+
+            })}
+
+            { _.map(department_routes, (route, key) => {
+
+              const { component, path } = route;
+
+              return (
+                <Route
+                  exact
+                  key={key}
+                  path={path}
+                  component={component}
+                />
+              );
+
+            })}
 
             <Route component={NotFoundComponent} />
 
