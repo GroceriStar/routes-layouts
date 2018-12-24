@@ -17,10 +17,8 @@ import {
 
 } from '../views';
 
-import _ from 'lodash'
-// import rouTE from 'route'
 
-const routes = [
+const grocery_routes = [
 
   {
     path: "/groceries",
@@ -61,38 +59,9 @@ const routes = [
 ];
 
 
-class GroceryRouter extends Component {
-  render() {
-    return (
-      <Fragment>
+export default grocery_routes;
 
 
-          { _.map(routes, (route, key) => {
-
-            const { component, path } = route;
-
-            return (
-              <Route
-                exact
-                key={key}
-                path={path}
-                component={component}
-              />
-            );
-
-          })}
-
-
-
-      </Fragment>
-    );
-  }
-}
-export {
-  GroceryRouter,
-  routes
-}
-  ;
 // export default GroceryRouter;
 
 

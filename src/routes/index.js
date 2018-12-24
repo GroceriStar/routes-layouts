@@ -2,26 +2,15 @@ import React, {
   Component
 } from 'react';
 
-// import {
-//   Switch,
-//   Route
-// } from 'react-router-dom';
+
 
 import {
   // BrowserRouter as Router,
    Route, Switch } from 'react-router-dom';
 
 
-// import Router from './showcase-router'
-
-
-
-import { GroceryRouter, routes as grocery_routes } from './groceryRouter';
-
-
-
-
-import  { DepartmentRouter, routes as department_routes } from './departmentRouter'
+import grocery_routes  from './groceryRouter';
+import department_routes  from './departmentRouter'
 
 
 import {
@@ -64,50 +53,46 @@ class AppRouter extends Component {
 
 
     return (
-          <Switch>
-            <Route path="/" exact component={HomeView} />
+      <Switch>
 
-            {/*renderRoutes(routes1)*/}
-
-            {/*renderRoutes(routes2)*/}
+        <Route path="/" exact component={HomeView} />
 
 
-            { _.map(grocery_routes, (route, key) => {
+        { _.map(grocery_routes, (route, key) => {
 
-              const { component, path } = route;
+          const { component, path } = route;
 
-              return (
-                <Route
-                  exact
-                  key={key}
-                  path={path}
-                  component={component}
-                />
-              );
+          return (
+            <Route
+              exact
+              key={key}
+              path={path}
+              component={component}
+            />
+          );
 
-            })}
+        })}
 
-            { _.map(department_routes, (route, key) => {
+        { _.map(department_routes, (route, key) => {
 
-              const { component, path } = route;
+          const { component, path } = route;
 
-              return (
-                <Route
-                  exact
-                  key={key}
-                  path={path}
-                  component={component}
-                />
-              );
+          return (
+            <Route
+              exact
+              key={key}
+              path={path}
+              component={component}
+            />
+          );
 
-            })}
-
-
-
-            <Route component={NotFoundComponent} />
+        })}
 
 
-          </Switch>
+        <Route component={NotFoundComponent} />
+
+
+      </Switch>
     );
   }
 }

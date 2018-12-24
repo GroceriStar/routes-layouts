@@ -12,11 +12,9 @@ import {
   ManageDepartmentView
 
 } from '../views';
-import _ from 'lodash';
 
-// import rouTE from 'route'
 
-const routes = [
+const department_routes = [
   {
     path: "/departments/:groceryId",
     component: DepartmentsView
@@ -49,41 +47,4 @@ const routes = [
 
 
 
-
-
-
-
-class DepartmentRouter extends Component {
-  render() {
-    return (
-
-      <Fragment>
-
-
-      { _.map(routes, (route, key) => {
-
-        const { component, path } = route;
-
-        return (
-          <Route
-            exact
-            key={key}
-            path={path}
-            component={component}
-          />
-        );
-
-      })}
-
-
-
-      </Fragment>
-    );
-  }
-}
-// export default DepartmentRouter;
-
-export {
-  DepartmentRouter,
-  routes
-}
+export default department_routes;
