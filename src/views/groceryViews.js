@@ -195,5 +195,5 @@ export {
 
   PrintGroceryView,
   FullGroceryView,
-  CloneGroceryView,
+  CloneGroceryView
 }

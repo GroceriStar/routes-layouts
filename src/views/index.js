@@ -9,7 +9,12 @@ import {
   GroceriesView,
   GroceryView,
   ManageGroceryView,
-  DesignedGroceryView
+  DesignedGroceryView,
+
+  PrintGroceryView,
+  FullGroceryView,
+  CloneGroceryView
+
 } from './groceryViews'
 
 import {
@@ -25,6 +30,11 @@ export {
   GroceryView,
   ManageGroceryView,
   DesignedGroceryView,
+
+  PrintGroceryView,
+  FullGroceryView,
+  CloneGroceryView,
+
 
 
   DepartmentsView,

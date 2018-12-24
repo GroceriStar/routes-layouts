@@ -27,17 +27,18 @@ const Header = () => {
 
       <Sep />
 
-            <Link to="/grocery/3/full">FULL grocery</Link> <Sep />
-            <Link to="/grocery/3/print">Print grocery</Link> <Sep />
-            <Link to="/grocery/3/clone">Clone grocery</Link> <Sep />
+
+      <Link to="/full/grocery/3">FULL grocery</Link> <Sep />
+      <Link to="/print/grocery/3">Print grocery</Link> <Sep />
+      <Link to="/clone/grocery/3">Clone grocery</Link> <Sep />
 
       <hr/>
+
 
 
     </Fragment>
   )
 }
-
 
 
 //

@@ -13,7 +13,7 @@ import {
   DesignedGroceryView,
   PrintGroceryView,
   FullGroceryView,
-  CloneGroceryView,
+  CloneGroceryView
 
 } from '../views';
 
@@ -21,10 +21,7 @@ import {
 // import rouTE from 'route'
 
 const routesee = [
-  // {
-  //   path: "/",
-  //   component: HomeView
-  // },
+
   {
     path: "/groceries",
     component: GroceriesView
@@ -32,21 +29,25 @@ const routesee = [
   {
     path: "/grocery/:id",
     component: GroceryView,
-    routes: [
-      {
-        path: "/grocery/:id/full",
-        component: FullGroceryView
-      },
-      {
-        path: "/grocery/:id/print",
-        component: PrintGroceryView
-      },
-      {
-        path: "/grocery/:id/clone",
-        component: CloneGroceryView
-      },
-    ]
+
   },
+
+
+  {
+    path: "/full/grocery/:id",
+    component: FullGroceryView
+  },
+  {
+    path: "/print/grocery/:id",
+    component: PrintGroceryView
+  },
+  {
+    path: "/clone/grocery/:id",
+    component: CloneGroceryView
+  },
+
+
+
 
   {
     path: "/design/grocery/:id",
@@ -55,12 +56,7 @@ const routesee = [
   {
     path: "/manage/grocery/:id",
     component: ManageGroceryView
-  },
-  {
-    path: "/grocery/:id/:status",
-    component: GroceryView
-  },
-
+  }
 
 ];
 
@@ -70,23 +66,6 @@ class GroceryRouter extends Component {
     return (
           <Fragment>
 
-            <Route path="/" exact component={HomeView} />
-
-
-            <Route path="/grocery/:id"  component={GroceryView} />
-
-            <Route path="/design/grocery/:id"  component={DesignedGroceryView} />
-
-
-            <Route path="/groceries"  component={GroceriesView} />
-
-            <Route path="/manage/grocery/:id"  component={ManageGroceryView} />
-
-
-
-
-            {/*full, print, clone*/}
-            <Route path="/grocery/:id/:status"  component={GroceryView} />
 
 
 
@@ -105,11 +84,11 @@ export {
 
 
 
-            //
-            // <Route path="/grocery/:id/:departmentId/:status"  component={GroceryView} />
-            // <Route path="/grocery/:id/:departmentId/all"  component={GroceryView} />
-            // <Route path="/grocery/:id/:departmentId/purchased"  component={GroceryView} />
-            // <Route path="/grocery/:id/:departmentId/the-third-key"  component={GroceryView} />
-            // <Route path="/grocery/:id/:departmentId"  component={GroceryView} />
-            //
-            //
+//
+// <Route path="/grocery/:id/:departmentId/:status"  component={GroceryView} />
+// <Route path="/grocery/:id/:departmentId/all"  component={GroceryView} />
+// <Route path="/grocery/:id/:departmentId/purchased"  component={GroceryView} />
+// <Route path="/grocery/:id/:departmentId/the-third-key"  component={GroceryView} />
+// <Route path="/grocery/:id/:departmentId"  component={GroceryView} />
+//
+//
