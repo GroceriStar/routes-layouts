@@ -12,10 +12,11 @@ import {
   ManageDepartmentView
 
 } from '../views';
+import _ from 'lodash';
 
 // import rouTE from 'route'
 
-const routesse = [
+const routes = [
   {
     path: "/departments/:groceryId",
     component: DepartmentsView
@@ -50,6 +51,8 @@ const routesse = [
 
 
 
+
+
 class DepartmentRouter extends Component {
   render() {
     return (
@@ -57,7 +60,20 @@ class DepartmentRouter extends Component {
       <Fragment>
 
 
+      { _.map(routes, (route, key) => {
 
+        const { component, path } = route;
+
+        return (
+          <Route
+            exact
+            key={key}
+            path={path}
+            component={component}
+          />
+        );
+
+      })}
 
 
 
@@ -69,5 +85,5 @@ class DepartmentRouter extends Component {
 
 export {
   DepartmentRouter,
-  routesse //@TODO bad name
+  routes
 }

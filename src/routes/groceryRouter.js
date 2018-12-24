@@ -17,10 +17,10 @@ import {
 
 } from '../views';
 
-
+import _ from 'lodash'
 // import rouTE from 'route'
 
-const routesee = [
+const routes = [
 
   {
     path: "/groceries",
@@ -64,20 +64,33 @@ const routesee = [
 class GroceryRouter extends Component {
   render() {
     return (
-          <Fragment>
+      <Fragment>
+
+
+          { _.map(routes, (route, key) => {
+
+            const { component, path } = route;
+
+            return (
+              <Route
+                exact
+                key={key}
+                path={path}
+                component={component}
+              />
+            );
+
+          })}
 
 
 
-
-
-
-          </Fragment>
+      </Fragment>
     );
   }
 }
 export {
   GroceryRouter,
-  routesee //@TODO bad name
+  routes
 }
   ;
 // export default GroceryRouter;
