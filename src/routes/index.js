@@ -9,8 +9,16 @@ import {
    Route, Switch } from 'react-router-dom';
 
 
-import grocery_routes  from './groceryRouter';
+import grocery_routes     from './groceryRouter';
 import department_routes  from './departmentRouter'
+
+// import IngredientsRouter from ''
+
+import shopping_routes from './shoppingRouter'
+
+import favorite_routes from './favoriteRouter'
+
+import purchased_routes from './purchasedRouter'
 
 
 import {
@@ -21,11 +29,7 @@ import {
 } from '../views';
 
 
-// import IngredientsRouter from ''
 
-// import FavoritesRouter from ''
-
-// import PurchasedRouter from ''
 
 
 // Later this router will be used as App router that will connect nested routes, from sub-components
@@ -73,6 +77,8 @@ class AppRouter extends Component {
 
         })}
 
+
+
         { _.map(department_routes, (route, key) => {
 
           const { component, path } = route;
@@ -87,6 +93,8 @@ class AppRouter extends Component {
           );
 
         })}
+
+
 
 
         <Route component={NotFoundComponent} />

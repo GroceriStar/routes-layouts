@@ -15,14 +15,16 @@ const ShoppingView = ({ match }) => {
 
   return (
     <div>
-      DepartmentsView - {match.url}
+      ShoppingView - {match.url}
 
     </div>
   )
 }
 
 
-const ShoppingView2 = ({ match }) => {
+
+
+const ChangeNameView = ({ match }) => {
 
   // console.log(match);
   console.log(match);
@@ -31,12 +33,123 @@ const ShoppingView2 = ({ match }) => {
   console.log(match.params.status);
   return (
     <div>
-      DepartmentView - {match.url}
+      ChangeNameView - {match.url}
 
     </div>
   )
 }
+const GroceriesAllView = ({ match }) => {
 
+  // console.log(match);
+  console.log(match);
+  console.log(match.params);
+
+  console.log(match.params.status);
+  return (
+    <div>
+      GroceriesAllView - {match.url}
+
+    </div>
+  )
+}
+const ChangeDepIdView = ({ match }) => {
+
+  // console.log(match);
+  console.log(match);
+  console.log(match.params);
+
+  console.log(match.params.status);
+  return (
+    <div>
+      ChangeDepIdView - {match.url}
+
+    </div>
+  )
+}
+const AddIngredientView = ({ match }) => {
+
+  // console.log(match);
+  console.log(match);
+  console.log(match.params);
+
+  console.log(match.params.status);
+  return (
+    <div>
+      AddIngredientView - {match.url}
+
+    </div>
+  )
+}
+const TogglePurchasedView = ({ match }) => {
+
+  // console.log(match);
+  console.log(match);
+  console.log(match.params);
+
+  console.log(match.params.status);
+  return (
+    <div>
+      TogglePurchasedView - {match.url}
+
+    </div>
+  )
+}
+const ClearPurchasedView = ({ match }) => {
+
+  // console.log(match);
+  console.log(match);
+  console.log(match.params);
+
+  console.log(match.params.status);
+  return (
+    <div>
+      ClearPurchasedView - {match.url}
+
+    </div>
+  )
+}
+const UnnatachView = ({ match }) => {
+
+  // console.log(match);
+  console.log(match);
+  console.log(match.params);
+
+  console.log(match.params.status);
+  return (
+    <div>
+      UnnatachView - {match.url}
+
+    </div>
+  )
+}
+const EditShoppingView = ({ match }) => {
+
+  // console.log(match);
+  console.log(match);
+  console.log(match.params);
+
+  console.log(match.params.status);
+  return (
+    <div>
+      EditShoppingView - {match.url}
+
+    </div>
+  )
+}
+const PreviewShoppingView = ({ match }) => {
+
+  // console.log(match);
+  console.log(match);
+  console.log(match.params);
+
+  console.log(match.params.status);
+  return (
+    <div>
+      PreviewShoppingView - {match.url}
+
+    </div>
+  )
+}
 
 // const { match } = this.props
 //
@@ -78,5 +191,15 @@ const ShoppingView2 = ({ match }) => {
 // -----------------------------
 
 export {
-  ShoppingView
+  ShoppingView,
+  ChangeNameView,
+  GroceriesAllView,
+  ChangeDepIdView,
+  AddIngredientView,
+  TogglePurchasedView,
+  ClearPurchasedView,
+  UnnatachView,
+
+  EditShoppingView,
+  PreviewShoppingView,
 }

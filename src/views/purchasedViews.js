@@ -15,7 +15,7 @@ const PurchasedListView = ({ match }) => {
 
   return (
     <div>
-      DepartmentsView - {match.url}
+      PurchasedListView - {match.url}
 
     </div>
   )
@@ -31,7 +31,7 @@ const PurchasedItemView = ({ match }) => {
   console.log(match.params.status);
   return (
     <div>
-      DepartmentView - {match.url}
+      PurchasedItemView - {match.url}
 
     </div>
   )
@@ -44,40 +44,102 @@ const PurchasedItemView = ({ match }) => {
 // console.log(match.url)
 
 
-// here we'll display list of groceries
-// const GroceriesView = ({ match }) => {
-//
-//   console.log(match);
-//   console.log(match.params);
-//   const items = [
-//     { id: 1, name: 'GL1', slug: 'first' },
-//     { id: 2, name: 'GL2', slug: 'second' },
-//     { id: 3, name: 'GL3', slug: 'third' },
-//   ]
-//   return (
-//     <div>
-//       GroceriesView - {match.url}
-//
-//       <hr />
-//       <ul>
-//         {items.map(({ name, id, slug }) => (
-//           <li key={name}>
-//             <Link to={`${match.url}/${id}`}>{name} - {slug}</Link>
-//           </li>
-//         ))}
-//       </ul>
-//       <hr />
-//
-//
-//     </div>
-//   )
-// }
+// here we'll display list of
+const PurchasedAtGroceryView = ({ match }) => {
 
+  console.log(match);
+  console.log(match.params);
+  // const items = [
+  //   { id: 1, name: 'GL1', slug: 'first' },
+  //   { id: 2, name: 'GL2', slug: 'second' },
+  //   { id: 3, name: 'GL3', slug: 'third' },
+  // ]
+  return (
+    <div>
+      PurchasedAtGroceryView - {match.url}
+
+      <hr />
+      <ul>
+        {/*items.map(({ name, id, slug }) => (
+          <li key={name}>
+            <Link to={`${match.url}/${id}`}>{name} - {slug}</Link>
+          </li>
+        ))*/}
+      </ul>
+      <hr />
+
+
+    </div>
+  )
+}
+
+// here we'll display list of
+const ManagePurchasedView = ({ match }) => {
+
+  console.log(match);
+  console.log(match.params);
+  // const items = [
+  //   { id: 1, name: 'GL1', slug: 'first' },
+  //   { id: 2, name: 'GL2', slug: 'second' },
+  //   { id: 3, name: 'GL3', slug: 'third' },
+  // ]
+  return (
+    <div>
+      ManagePurchasedView - {match.url}
+
+      <hr />
+      <ul>
+        {/*items.map(({ name, id, slug }) => (
+          <li key={name}>
+            <Link to={`${match.url}/${id}`}>{name} - {slug}</Link>
+          </li>
+        ))*/}
+      </ul>
+      <hr />
+
+
+    </div>
+  )
+}
+
+// here we'll display list of
+const ManagePurchasedByDateView = ({ match }) => {
+
+  console.log(match);
+  console.log(match.params);
+  // const items = [
+  //   { id: 1, name: 'GL1', slug: 'first' },
+  //   { id: 2, name: 'GL2', slug: 'second' },
+  //   { id: 3, name: 'GL3', slug: 'third' },
+  // ]
+  return (
+    <div>
+      ManagePurchasedByDateView - {match.url}
+
+      <hr />
+      <ul>
+        {/*items.map(({ name, id, slug }) => (
+          <li key={name}>
+            <Link to={`${match.url}/${id}`}>{name} - {slug}</Link>
+          </li>
+        ))*/}
+      </ul>
+      <hr />
+
+
+    </div>
+  )
+}
 
 
 // -----------------------------
 
 export {
+
+  PurchasedAtGroceryView,
+  PurchasedItemView,
   PurchasedListView,
-  PurchasedItemView
+  ManagePurchasedView,
+  ManagePurchasedByDateView,
+
 }

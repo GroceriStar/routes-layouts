@@ -15,7 +15,7 @@ const FavoritesView = ({ match }) => {
 
   return (
     <div>
-      DepartmentsView - {match.url}
+      FavoritesView - {match.url}
 
     </div>
   )
@@ -31,7 +31,7 @@ const FavoriteView = ({ match }) => {
   console.log(match.params.status);
   return (
     <div>
-      DepartmentView - {match.url}
+      FavoriteView - {match.url}
 
     </div>
   )
