@@ -34,7 +34,7 @@ const Comp = ({  }) => (
 //        );
 //    }
 // }
- class DashboardLayout extends Component {
+ class GroceryCollectionLayout extends Component {
     render() {
         // const Component = this.props.component;
         // const route = this.props.route;
@@ -42,11 +42,11 @@ const Comp = ({  }) => (
         // const userActions = this.props.userActions;
         return (
             <div>
-                <h1>DashboardLayout</h1>
+                <h1>GroceryCollectionLayout</h1>
 
             </div>
         );
     }
 }
 
-export default DashboardLayout
+export default GroceryCollectionLayout

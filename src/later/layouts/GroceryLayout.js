@@ -12,7 +12,7 @@ const Wrapper = ({ children }) => (
 
 const Comp = ({  }) => (
   <Wrapper>
-    ...
+    // ...
   </Wrapper>
 );
 
