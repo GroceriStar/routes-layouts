@@ -37,6 +37,29 @@ const department_routes = [
   },
 ];
 
+const department_routes2 = [
+  {
+    path: "/department/all/:groceryId",
+    component: DepartmentsView
+  },
+  {
+    path: "/department/view/:id/:groceryId",
+    component: DepartmentView
+  },
+  {
+    path: "/department/status/:id/:groceryId/:status",
+    component: DepartmentView
+  },
+  {
+    path: "/department/all/manage/:groceryId",
+    component: ManageDepartmentsView
+  },
+  {
+    path: "/department/one/manage/:groceryId:/departmentId",
+    component: ManageDepartmentView
+  },
+];
+
 
 // <Route path="/departments" exact component={DepartmentsView} />
 //
@@ -47,4 +70,4 @@ const department_routes = [
 
 
 
-export default department_routes;
+export default department_routes2;
