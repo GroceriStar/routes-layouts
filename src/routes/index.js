@@ -38,16 +38,8 @@ import {
 import NotFoundComponent from '../components/NotFoundComponent'
 
 
-// @TODO replace with a separated functions from separate route config functions
-// main goal is to separate functions
-// import {
-//   RouterConfigExample
-//   , renderRoutes
-//   // ,
-//   // RouteWithSubRoutes
-// } from './TheConfig'
-
 import _ from 'lodash';
+
 
 class AppRouter extends Component {
   render() {

@@ -61,43 +61,8 @@ const grocery_routes = [
 
 
 
-const grocery_routes2 = [
 
-  {
-    path: "/grocery/all",
-    component: GroceriesView
-  },
-  {
-    path: "/grocery/view/:id",
-    component: GroceryView,
-
-  },
-
-
-  {
-    path: "/grocery/full/:id",
-    component: FullGroceryView
-  },
-  {
-    path: "/grocery/print/:id",
-    component: PrintGroceryView
-  },
-  {
-    path: "/grocery/clone/:id",
-    component: CloneGroceryView
-  },
-  {
-    path: "/grocery/design/:id",
-    component: DesignedGroceryView
-  },
-  {
-    path: "/grocery/manage/:id",
-    component: ManageGroceryView
-  }
-
-];
-
-export default grocery_routes2;
+export default grocery_routes;
 
 
 // export default GroceryRouter;

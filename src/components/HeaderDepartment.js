@@ -3,115 +3,70 @@ import { Link } from 'react-router-dom';
 
 
 //@TODO replace with NavLink
-// const HeaderDepartment = () => {
-//   return (
-//     <ul>
-//       <li>
-//         <Link to={{ pathname: "/departments/5" }}>
-//            view departments
-//          </Link>
-//        </li>
-//       <li>
-//         <Link to={{ pathname: "/department/10/5" }}>
-//            view department
-//          </Link>
-//        </li>
-//        <li>
-//          <Link to={{ pathname: "/department/3/1", search: "?status=all" }}>
-//            STATUS: ALL
-//          </Link>
-//        </li>
-//        <li>
-//          <Link to={{ pathname: "/department/3/1", search: "?status=purchased" }}>
-//            Status: purchased
-//          </Link>
-//        </li>
-//        <li>
-//          <Link to={{ pathname: "/department/3/1", search: "?status=the-third-key" }}>
-//            STATUS: THIRD=item
-//          </Link>
-//       </li>
-//       <li>xxxx</li>
-//       <li>xxxx</li>
-//       <li>xxxx</li>
-//       <li>
-//         <Link to={{ pathname: "/department/3/1/all" }}>
-//           1STATUS: ALL
-//         </Link>
-//       </li>
-//       <li>
-//         <Link to={{ pathname: "/department/3/1/purchased" }}>
-//           1Status: purchased
-//         </Link>
-//       </li>
-//       <li>
-//         <Link to={{ pathname: "/department/3/1/the-third-key" }}>
-//           1STATUS: THIRD=item
-//         </Link>
-//      </li>
-//      <li>xxxx</li>
-//      <li>xxxx</li>
-//      <li>xxxx</li>
-//      <li>
-//        <Link to={{ pathname: "/manage/departments/3" }}>
-//          1Status: purchased
-//        </Link>
-//      </li>
-//      <li>
-//        <Link to={{ pathname: "/manage/department/3/1" }}>
-//          1STATUS: THIRD=item
-//        </Link>
-//     </li>
-//     </ul>
-//   )
-// };
-
-
-
 const HeaderDepartment = () => {
   return (
     <ul>
       <li>
-        <Link to={{ pathname: "/department/all/5" }}>
-           /department/all/
+        <Link to={{ pathname: "/departments/5" }}>
+           view departments
          </Link>
        </li>
       <li>
-        <Link to={{ pathname: "/department/view/10/5" }}>
-           /department/view/
+        <Link to={{ pathname: "/department/10/5" }}>
+           view department
          </Link>
        </li>
        <li>
-         <Link to={{ pathname: "/department/status/3/1", search: "?status=all" }}>
+         <Link to={{ pathname: "/department/3/1", search: "?status=all" }}>
            STATUS: ALL
          </Link>
        </li>
        <li>
-         <Link to={{ pathname: "/department/status/3/1", search: "?status=purchased" }}>
+         <Link to={{ pathname: "/department/3/1", search: "?status=purchased" }}>
            Status: purchased
          </Link>
        </li>
        <li>
-         <Link to={{ pathname: "/department/status/3/1", search: "?status=the-third-key" }}>
+         <Link to={{ pathname: "/department/3/1", search: "?status=the-third-key" }}>
            STATUS: THIRD=item
          </Link>
       </li>
-
+      <li>xxxx</li>
+      <li>xxxx</li>
+      <li>xxxx</li>
       <li>
-        <Link to={{ pathname: "/department/all/manage/3" }}>
-          /department/all/manage/3
+        <Link to={{ pathname: "/department/3/1/all" }}>
+          1STATUS: ALL
+        </Link>
+      </li>
+      <li>
+        <Link to={{ pathname: "/department/3/1/purchased" }}>
+          1Status: purchased
+        </Link>
+      </li>
+      <li>
+        <Link to={{ pathname: "/department/3/1/the-third-key" }}>
+          1STATUS: THIRD=item
         </Link>
      </li>
+     <li>xxxx</li>
+     <li>xxxx</li>
+     <li>xxxx</li>
      <li>
-       <Link to={{ pathname: "/department/one/manage/3/1" }}>
-         /department/one/manage/3/1
+       <Link to={{ pathname: "/manage/departments/3" }}>
+         1Status: purchased
+       </Link>
+     </li>
+     <li>
+       <Link to={{ pathname: "/manage/department/3/1" }}>
+         1STATUS: THIRD=item
        </Link>
     </li>
-
-
     </ul>
   )
 };
+
+
 
 
 export default HeaderDepartment;

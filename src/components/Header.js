@@ -7,40 +7,27 @@ const Sep = () => <span>  |  </span>;
 const Header = () => {
   return (
     <Fragment>
-      <Link to="/grocery/all">/grocery/all</Link> <Sep />
-      <Link to="/grocery/view/3">/grocery/view/3</Link> <Sep />
-      <Link to="/grocery/full/3">/grocery/full/3</Link> <Sep />
-      <Link to="/grocery/print/3">/grocery/print/3</Link>  <Sep />
-      <Link to="/grocery/clone/3">/grocery/clone/3</Link> <Sep />
-      <Link to="/grocery/design/3">/grocery/design/3</Link> <Sep />
-      <Link to="/grocery/manage/3">/grocery/manage/3</Link> <Sep />
+      <Link to="/">Home</Link> <Sep />
+      <Link to="/grocery/3">view grocery</Link> <Sep />
+      <Link to="/design/grocery/3">designed grocery page</Link> <Sep />
+      <Link to="/groceries">all groceries</Link>  <Sep />
+      <Link to="/manage/grocery/3">manage grocery</Link> <Sep />
+
+
+      <Sep />
+
+
+      <Link to="/full/grocery/3">FULL grocery</Link> <Sep />
+      <Link to="/print/grocery/3">Print grocery</Link> <Sep />
+      <Link to="/clone/grocery/3">Clone grocery</Link> <Sep />
+
+      <hr/>
+
+
+
     </Fragment>
   )
 }
-// const Header = () => {
-//   return (
-//     <Fragment>
-//       <Link to="/">Home</Link> <Sep />
-//       <Link to="/grocery/3">view grocery</Link> <Sep />
-//       <Link to="/design/grocery/3">designed grocery page</Link> <Sep />
-//       <Link to="/groceries">all groceries</Link>  <Sep />
-//       <Link to="/manage/grocery/3">manage grocery</Link> <Sep />
-//
-//
-//       <Sep />
-//
-//
-//       <Link to="/full/grocery/3">FULL grocery</Link> <Sep />
-//       <Link to="/print/grocery/3">Print grocery</Link> <Sep />
-//       <Link to="/clone/grocery/3">Clone grocery</Link> <Sep />
-//
-//       <hr/>
-//
-//
-//
-//     </Fragment>
-//   )
-// }
 
 
 
