@@ -4,8 +4,49 @@
 // } from 'react-router-dom';
 
 
+const HomeView = ({ routes }) => {
+
+  // console.log(match);
+  return (
+    <div>
+      HomeView
+
+
+
+    </div>
+  )
+}
+
+const LoginView = ({ routes }) => {
+
+  // console.log(match);
+  return (
+    <div>
+      LoginView
+
+
+
+    </div>
+  )
+}
+
+const ProtectedView = ({ routes }) => {
+
+  // console.log(match);
+  return (
+    <div>
+      ProtectedView
+
+
+
+    </div>
+  )
+}
+
+
+
 import {
-  HomeView,
+  // HomeView,
   GroceriesView,
   GroceryView,
   ManageGroceryView,
@@ -26,6 +67,9 @@ import {
 
 export {
   HomeView,
+  LoginView,
+  ProtectedView,
+
   GroceriesView,
   GroceryView,
   ManageGroceryView,

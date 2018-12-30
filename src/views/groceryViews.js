@@ -7,18 +7,6 @@ import {
 import HeaderDepartment from '../components/HeaderDepartment'
 
 
-const HomeView = ({ routes }) => {
-
-  // console.log(match);
-  return (
-    <div>
-      HomeView
-
-    {/*}<RouterConfigExample {...routes} />*/}
-
-    </div>
-  )
-}
 
 
 // const { match } = this.props

@@ -22,7 +22,9 @@ import purchased_routes from './purchasedRouter'
 
 
 import {
-  HomeView
+  HomeView,
+  LoginView,
+  ProtectedView
 
 
 
@@ -90,6 +92,9 @@ class AppRouter extends Component {
 
 
         <Route component={NotFoundComponent} />
+
+        <Route path="/login" component={LoginView} />
+        <Route path="/protected" component={ProtectedView} />
 
 
       </Switch>
