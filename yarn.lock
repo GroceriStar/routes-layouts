@@ -817,17 +817,17 @@
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
 
-"@groceristar/groceristar-fetch@^2.0.14":
-  version "2.0.14"
-  resolved "https://registry.yarnpkg.com/@groceristar/groceristar-fetch/-/groceristar-fetch-2.0.14.tgz#0b3407644b1b220d7ffbbd5a1fc71a2447eda1ab"
-  integrity sha512-foTSgQWxy7XgneV+I76BycgEJuVdRmARjsYPWIEi3m8Q3Id4e1FIxcBbVqOSq+oeT5uto0dBjWqcVnD3Y4f9Cg==
+"@groceristar/groceristar-fetch@^2.1.7":
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/@groceristar/groceristar-fetch/-/groceristar-fetch-2.1.7.tgz#0503130a92d714b8158382365f3311626ad7d77b"
+  integrity sha512-f05Jnh/HLGzy/TRhI8SpVSrXYg7bgW2YlObJnjTMmu2WrZSIdXfxCVQee5/hkFZbhfe8uQ7jAP5V1WlZMhsU0g==
   dependencies:
-    "@groceristar/sd-wrapper" "^2.0.7"
+    "@groceristar/sd-wrapper" "^2.0.9"
     dayjs "^1.8.0"
     fs "0.0.2"
     lodash "^4.17.10"
     underscore "^1.9.1"
-    uuid "3.3.2"
+    uuid "^3.3.2"
 
 "@groceristar/grocery-component@^1.0.6":
   version "1.0.6"
@@ -835,10 +835,10 @@
   dependencies:
     uuid "^3.3.2"
 
-"@groceristar/sd-wrapper@^2.0.7":
-  version "2.0.7"
-  resolved "https://registry.yarnpkg.com/@groceristar/sd-wrapper/-/sd-wrapper-2.0.7.tgz#6029a30bb1b8fb56a0bef819299a5593c5cb35de"
-  integrity sha512-aI/jdN/d2mkfs7xpthYBI2ZnUkPVwZ2dIa7HhfybYYnOD5FfY2GWCJtvJb7CKWckwCQ/VrcqgeW/fhAhn1IuXA==
+"@groceristar/sd-wrapper@^2.0.9":
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/@groceristar/sd-wrapper/-/sd-wrapper-2.0.9.tgz#b9351afd0ad04d30cfad422a574337155a0eba9e"
+  integrity sha512-CPKVuRzcOynw38UttMnI3ydIyL/3IgGigSJ/xjuOwzxjCG10lEt5uQhlJqVk6NA45XC7Vr8VUpb6EZxD26p+fg==
   dependencies:
     path "^0.12.7"
     uuid "^3.3.2"
@@ -9574,7 +9574,7 @@ utils-merge@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
 
-uuid@3.3.2, uuid@^3.0.1, uuid@^3.3.2:
+uuid@^3.0.1, uuid@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
 
