@@ -817,17 +817,17 @@
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
 
-"@groceristar/groceristar-fetch@^2.0.14":
-  version "2.0.14"
-  resolved "https://registry.yarnpkg.com/@groceristar/groceristar-fetch/-/groceristar-fetch-2.0.14.tgz#0b3407644b1b220d7ffbbd5a1fc71a2447eda1ab"
-  integrity sha512-foTSgQWxy7XgneV+I76BycgEJuVdRmARjsYPWIEi3m8Q3Id4e1FIxcBbVqOSq+oeT5uto0dBjWqcVnD3Y4f9Cg==
+"@groceristar/groceristar-fetch@^2.1.10":
+  version "2.1.10"
+  resolved "https://registry.yarnpkg.com/@groceristar/groceristar-fetch/-/groceristar-fetch-2.1.10.tgz#3c76c156392bad04554b79f86529d4ebd8482c12"
+  integrity sha512-026T60LIqj7/Amd9GUnrV2yF9qurrb1N+pbR+vbo84Mi2ZHzZ/FTJqzpsqzLFU4DPhtPNhsHE/PKgTZi4yd0qg==
   dependencies:
-    "@groceristar/sd-wrapper" "^2.0.7"
-    dayjs "^1.8.0"
+    "@groceristar/sd-wrapper" "^3.0.0"
+    dayjs "^1.8.12"
     fs "0.0.2"
     lodash "^4.17.10"
     underscore "^1.9.1"
-    uuid "3.3.2"
+    uuid "^3.3.2"
 
 "@groceristar/grocery-component@^1.0.6":
   version "1.0.6"
@@ -835,10 +835,10 @@
   dependencies:
     uuid "^3.3.2"
 
-"@groceristar/sd-wrapper@^2.0.7":
-  version "2.0.7"
-  resolved "https://registry.yarnpkg.com/@groceristar/sd-wrapper/-/sd-wrapper-2.0.7.tgz#6029a30bb1b8fb56a0bef819299a5593c5cb35de"
-  integrity sha512-aI/jdN/d2mkfs7xpthYBI2ZnUkPVwZ2dIa7HhfybYYnOD5FfY2GWCJtvJb7CKWckwCQ/VrcqgeW/fhAhn1IuXA==
+"@groceristar/sd-wrapper@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@groceristar/sd-wrapper/-/sd-wrapper-3.0.0.tgz#e75c14a2aca98783898626399058895a815513a0"
+  integrity sha512-MCvr1WLkILp5IWuH8jSq9nE4XBds3Y56cZgjZoKrEbRuYL6puxFcaYm2YP6ShoR3x8Y7FrIZWEPvzJ4Y1lRt7w==
   dependencies:
     path "^0.12.7"
     uuid "^3.3.2"
@@ -2879,10 +2879,10 @@ date-now@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/date-now/-/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
 
-dayjs@^1.8.0:
-  version "1.8.8"
-  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.8.8.tgz#81c81a8bb2488ef859f6c9bead9b62d649072bfd"
-  integrity sha512-qBY3kVAVJMxzS4e7DAwZZ/SSiO/DBXbvc/qqbyf1FbsZrxBq81QPdUEWhiPu8Fragf5RfHsLwtH8kCGwKL4qLQ==
+dayjs@^1.8.12:
+  version "1.8.12"
+  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.8.12.tgz#f9610fb9b115aa2fe2a07e742c130df418cee76a"
+  integrity sha512-7keChCzzjU68sYJpk7kEI1Q9qbJyscyiW0STwEhqDFt+2js9pA/BSzmYE4PRxcMMoUMxNeY0TEMZHqV/JBR4OA==
 
 debug@2.6.9, debug@^2.1.2, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.8, debug@^2.6.9:
   version "2.6.9"
@@ -9576,7 +9576,7 @@ utils-merge@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
 
-uuid@3.3.2, uuid@^3.0.1, uuid@^3.3.2:
+uuid@^3.0.1, uuid@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
 
